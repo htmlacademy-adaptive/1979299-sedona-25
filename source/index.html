@@ -4,9 +4,65 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/header-images/logotype-sedona.svg" width="102" height="84" alt="Город «Седона».">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">
+                Главная
+              </a>
+              <button class="site-list__button" type="button">
+                <span class="visually-hedden">Закрыть.</span>
+              </button>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">
+                Фото и видео
+              </a>
+            </li><li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">
+                Форма Отзыва
+              </a>
+            </li><li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="main-container__title title-site">
+        <h1 class="visually-hidden">Добро пожаловать в великолепную "Седону"</h1>
+        <img class="title-site__image" src="img/header-images/main-title.svg" width="282" height="214" alt="Добро пожаловать в великолепную «Седону».">
+      </div>
+      <section class="stats">
+        <div class="stats__wrapper">
+          <header class="stats__header">
+            <h2 class="visually-hidden">
+              Статистика города Седона
+            </h2>
+            <p class="stats__slogan">
+              СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслущивающий большего!
+            </p>
+            <p class="stats__intro">
+              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            </p>
+          </header>
+        </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      </section>
+
+    </main>
+
+
 
   </body>
 </html>

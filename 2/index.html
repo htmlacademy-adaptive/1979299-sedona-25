@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -12,7 +12,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
+
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="#">
@@ -36,40 +36,41 @@
               </a>
             </li>
           </ul>
-        </div>
+
       </nav>
     </header>
     <main class="main-container">
-      <div class="main-container__title title-site">
+      <section class="main-container__title title-site">
         <h1 class="visually-hidden">Добро пожаловать в великолепную "Седону"</h1>
         <img class="title-site__image" src="img/header-images/main-title.svg" width="282" height="214" alt="Добро пожаловать в великолепную «Седону».">
-      </div>
+      </section>
       <section class="stats">
-        <div class="stats__wrapper">
+
           <header class="stats__header">
             <h2 class="visually-hidden">
               Статистика города Седона
             </h2>
             <p class="stats__slogan">
-              СЕДОНА — небольшой городок в АРИЗОНЕ,<br> заслущивающий большего!
+              СЕДОНА — небольшой городок в АРИЗОНЕ, заслущивающий большего!
             </p>
             <p class="stats__intro">
               Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
             </p>
           </header>
-        </div>
+
       </section>
       <section class="advantages">
-        <div class="adventages__wrapper">
+
           <h2 class="visually-hidden">Преимущества города</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--selected">
               <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
               <p class="advantages__description">— №1 —</p>
               <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              <div class="more">
                 <ul class="advantages__item__more more-list">
                   <li class="more__item city more__item--visible">
-                    <img class="more__item__image city-image" src="img/main-images/city.jpg" width="320" height="260" alt="Городской пейзаж.">
+                    <img class="city-image" src="img/main-images/city.jpg" width="320" height="260" alt="Городской пейзаж.">
                   </li>
                   <li class="more__item housing more__item-hous more__item--visible">
                     <h3 class="more__item__title housing__title">Жилье</h3>
@@ -84,16 +85,19 @@
                     <p class="more__item__description souvenirs__description">Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
+              </div>
             </li>
             <li class="advantages__item advantages__item--selected">
               <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
               <p class="advantages__description">— №2 —</p>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <div class="more">
                 <ul class="advantages__item__more more-list">
                   <li class="more__item bridge more__item--visible">
-                    <img class="more__item__image bridge-image" src="img/main-images/bridge.jpg" width="320" height="260" alt="Мост Дьявола.">
+                    <img class="bridge-image" src="img/main-images/bridge.jpg" width="320" height="260" alt="Мост Дьявола.">
                   </li>
                 </ul>
+              </div>
             </li>
             <li class="advantages__item advantages__item--selected">
               <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
@@ -111,29 +115,25 @@
               <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
-        </div>
+
       </section>
       <section class="order">
-        <div class="order__wrapper">
+
           <h2 class="visually-hidden">Заказ гостиницы</h2>
           <ul class="order__list">
             <li class="order__item">
               <b class="order__item__interesting">ЗАИНТЕРЕСОВАЛИСЬ?</b>
               <p class="order__item__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </li>
-            <a class="order__item__link search-link" href="#">
-              <button class="search-link__button button"><span class="search-link__button__span">Найти Гостиницу</span></button>
-            </a>
+            <a class="order__item__link search-link" href="#">Найти Гостиницу</a>
             <img class="order__item__map search-map search-map-marker" src="img/main-images/map.jpg" width="320" height="350" alt="карта поиска.">
           </ul>
-        </div>
+
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag hashtag">
-          <a class="hashtag-link" href="#">#visitSEDONA</a>
-        </div>
+
+        <a class="main-foot__link" href="#">#visitSEDONA</a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -149,14 +149,9 @@
         </div>
         <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">ссылка на сайт HTML Academy.</span></a>
         </div>
 
-
-      </div>
-
     </footer>
-
-
   </body>
 </html>

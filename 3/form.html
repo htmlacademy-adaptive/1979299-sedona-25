@@ -51,35 +51,20 @@
           <fieldset class="form__group yourself">
             <legend  class="yourself__name">Представьтесь:</legend>
             <div class="yorself__container yourself-data">
-              <h3 class="yourself-data__title">ИМЯ*:</h3>
-              <label for="yourself-name">
-                <span class="visually-hidden">Добавьте имя.</span>
-              </label>
+              <label for="yourself-name">ИМЯ*:</label>
               <input class="yourself-data__name" type="text" id="yourself-name" name="yourself-name" placeholder="Пётр" required>
-              <h3 class="yourself-data__title">ФАМИЛИЯ*:</h3>
-              <label for="yourself-surname">
-                <span class="visually-hidden">Добавьте фамилию.</span>
-              </label>
+              <label for="yourself-surname">ФАМИЛИЯ*:</label>
               <input class="yourself-data__surname" type="text" id="yourself-surname" name="yourself-surname" placeholder="Пустота" required>
-              <h3 class="yourself-data__title">Отчество:</h3>
-              <label for="yourself-patronymic">
-                <span class="visually-hidden">Добавьте отчество.</span>
-              </label>
+              <label for="yourself-patronymic">Отчество:</label>
               <input class="yourself-data__patronymic" type="text" id="yourself-patronymic" name="yourself-patronymic" placeholder="Викторович">
             </div>
           </fieldset>
           <fieldset class="form__group contacts">
             <legend  class="contacts__name">Контактная информация:</legend>
             <div class="contacts__container contacts-data">
-              <h3 class="contacts-data__title">Контактный телефон*:</h3>
-              <label for="contacts-phone">
-                <span class="visually-hidden">Введите телефон.</span>
-              </label>
+              <label for="contacts-phone">Контактный телефон*:</label>
               <input class="contacts-data__phone" type="tel" name="contacts-phone" id="contacts-phone" placeholder="Введите телефон" required>
-              <h3 class="contacts-data__title">Электронная почта*:</h3>
-              <label for="contacts-email">
-                <span class="visually-hidden">Введите e-mail.</span>
-              </label>
+              <label for="contacts-email">Электронная почта*:</label>
               <input class="contatcts-data__email" type="email" name="contacts-email" id="contacts-email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
@@ -88,21 +73,21 @@
             <ul class="impression__list">
               <li class="impression__item opinion">
                 <label class="opinion__label">
-                  <input class="visually-hidden opinion__input" type="radio" name="positive" value="positive" checked>
+                  <input class="visually-hidden opinion__input" type="radio" name="opinion-input" value="positive" checked>
                   <span class="opinion__control-mark"></span>
                   <span class="opinion__span">Скорее положительное</span>
                 </label>
               </li>
               <li class="impression__item negative">
                 <label class="negative__label">
-                  <input class="visually-hidden negative__input" type="radio" name="negative" value="negative">
+                  <input class="visually-hidden negative__input" type="radio" name="opinion-input" value="negative">
                   <span class="negative__control-mark"></span>
                   <span class="negative__span">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="impression__item difficult">
                 <label class="difficult__label">
-                  <input class="visually-hidden difficult__input" type="radio" name="difficult" value="difficult">
+                  <input class="visually-hidden difficult__input" type="radio" name="opinion-input" value="difficult">
                   <span class="difficult__control-mark"></span>
                   <span class="difficult__span">Затрудняюсь ответить</span>
                 </label>

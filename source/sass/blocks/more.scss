@@ -1,0 +1,27 @@
+.more__item:first-child {
+  margin-bottom: 23px;
+}
+
+.more__item:nth-child(2) {
+  margin-left: 65px;
+  margin-bottom: 22px;
+  .more__item__title {
+  margin-bottom: 16px;
+}
+}
+
+.more__item:nth-child(3) {
+  margin-left: 70px;
+  margin-bottom: 22px;
+  .more__item__title {
+  margin-bottom: 16px;
+}
+}
+
+.more__item:nth-child(4) {
+  margin-left: 62px;
+  margin-bottom: 52px;
+  .more__item__title {
+  margin-bottom: 16px;
+  }
+}

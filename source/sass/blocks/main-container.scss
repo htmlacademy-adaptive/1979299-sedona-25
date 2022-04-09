@@ -1,5 +1,7 @@
 .main-container {
-
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 auto;
 }
 
 .main-container__title {
@@ -9,4 +11,14 @@
   background-color: tomato;
   min-width: 320px;
   min-height: 389px;
+}
+
+.main-container__stats {
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 16px;
+
+  .main-container__stats-intro {
+    margin-top: 35px;
+  }
 }

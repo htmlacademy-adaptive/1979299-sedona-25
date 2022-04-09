@@ -40,10 +40,13 @@
 }
 
 .advantages__description {
-  display: block;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.advantages-bridge__description {
+  font-weight: 400;
 }
 
 .advantages__item__more {
@@ -53,4 +56,28 @@
   background-color: #ffffff;
   color: #000000;
   text-align: left;
+}
+
+.advantahes__item__posts {
+  background-color: #EEEEEE;
+  height: 150px;
+  padding-top: 26px;
+  .advantages__title {
+    color: #000000;
+    margin-bottom: 11px;
+  }
+  p {
+    margin-bottom: 17px;
+  }
+}
+
+.advantahes__item__posts {
+  .advantages__description {
+    font-family: "pt-sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -96,11 +97,11 @@
           <fieldset class="form__group visit">
             <legend class="visit__name">посещенные достопримечательности:</legend>
             <ul class="visit__list">
-              <li class="visit__item bridge">
-                <label class="bridge__label">
-                  <input class="visually-hidden bridge__input" type="checkbox" name="bridge" checked>
-                  <span class="bridge__control-mark"></span>
-                  <span class="bridge__span">Мост Дьявола</span>
+              <li class="visit__item bridge-visit">
+                <label class="bridge-visit__label">
+                  <input class="visually-hidden bridge-visit__input" type="checkbox" name="bridge" checked>
+                  <span class="bridge-visit__control-mark"></span>
+                  <span class="bridge-visit__span">Мост Дьявола</span>
                 </label>
               </li>
               <li class="visit__item mountain">
@@ -129,7 +130,8 @@
           <fieldset class="form__group emotions">
             <legend class="emotions__name">Опишите свои эмоции:</legend>
             <label class="emotions__label emotions-description">
-              <input class="emotions-description__input" type="text" placeholder="Опишите подробно все свои восторги" required>
+              <textarea class="emotions-description__input" type="text" placeholder="Опишите подробно все свои восторги" required>Опишите подробно все свои восторги
+              </textarea>
               <span class="visually-hidden">Опишите подробно все свои восторги.</span>
             </label>
           </fieldset>
@@ -177,4 +179,3 @@
     </div>
   </body>
 </html>
-

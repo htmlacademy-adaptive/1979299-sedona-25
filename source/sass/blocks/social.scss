@@ -1,0 +1,45 @@
+$image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/second-draft/1979299-sedona-25/source/img/footer-images/vkontakte.svg";
+
+.social__link--vkontakte {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-color:  #81B3D2;
+  }
+  &::after {
+    position: absolute;
+    background-image: url($image-vkontakte);
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: aqua;
+    left: 10px;
+    top: 10px;
+  }
+}
+
+.social__link--telegram {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-color:  #81B3D2;
+  }
+
+}
+
+.social__link--youtube {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    background-color:  #81B3D2;
+  }
+}

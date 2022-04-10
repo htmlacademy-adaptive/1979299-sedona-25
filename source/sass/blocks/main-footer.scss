@@ -1,0 +1,28 @@
+.main-fotter {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-footer__link {
+  margin-top: 28.5px;
+  display: block;
+  font-family: "pt-sans", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 700;
+  size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-footer__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 156px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

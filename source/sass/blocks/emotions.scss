@@ -1,0 +1,39 @@
+.emotions {
+  border: none;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.emotions__name {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.emotions-name-style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.emotions-description__input {
+  width: 100%;
+  height: 150px;
+  background-color: #F2F2F2;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.emotions__label {
+  display: block;
+  margin-bottom: 56px;
+}

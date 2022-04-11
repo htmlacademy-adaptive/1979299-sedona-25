@@ -19,3 +19,29 @@
   padding: 0;
   margin: 0;
 }
+
+.form__container__button {
+  width: 281px;
+}
+
+.form-button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  width: 281px;
+  height: 58px;
+  margin-left: 20px;
+  color: #ffffff;
+  background: #81b3d2;
+}
+
+.form__necessarily {
+  text-align: end;
+  margin-right: 20px;
+}
+
+.form-necessarily-style {
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}

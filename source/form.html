@@ -49,80 +49,80 @@
         </section>
         <form class="form-filling__form form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__group yourself">
-            <legend  class="yourself__name">Представьтесь:</legend>
-            <div class="yorself__container yourself-data">
-              <label for="yourself-name">ИМЯ*:</label>
-              <input class="yourself-data__name" type="text" id="yourself-name" name="yourself-name" placeholder="Пётр" required>
-              <label for="yourself-surname">ФАМИЛИЯ*:</label>
-              <input class="yourself-data__surname" type="text" id="yourself-surname" name="yourself-surname" placeholder="Пустота" required>
-              <label for="yourself-patronymic">Отчество:</label>
-              <input class="yourself-data__patronymic" type="text" id="yourself-patronymic" name="yourself-patronymic" placeholder="Викторович">
+            <legend  class="yourself__name yourself-name-style">Представьтесь:</legend>
+            <div class="yourself__container yourself-data">
+              <label class="yourself-data__label" for="yourself-name">имя*:</label>
+              <input class="yourself-data__name yourself-data-name" type="text" id="yourself-name" name="yourself-name" placeholder="Пётр" required>
+              <label class="yourself-data__label" for="yourself-surname">ФАМИЛИЯ*:</label>
+              <input class="yourself-data__surname yourself-data-surname" type="text" id="yourself-surname" name="yourself-surname" placeholder="Пустота" required>
+              <label class="yourself-data__label" for="yourself-patronymic">Отчество:</label>
+              <input class="yourself-data__patronymic yourself-data-patronymic" type="text" id="yourself-patronymic" name="yourself-patronymic" placeholder="Викторович">
             </div>
           </fieldset>
           <fieldset class="form__group contacts">
-            <legend  class="contacts__name">Контактная информация:</legend>
+            <legend  class="contacts__name contacts-name-style">Контактная информация:</legend>
             <div class="contacts__container contacts-data">
-              <label for="contacts-phone">Контактный телефон*:</label>
-              <input class="contacts-data__phone" type="tel" name="contacts-phone" id="contacts-phone" placeholder="Введите телефон" required>
-              <label for="contacts-email">Электронная почта*:</label>
-              <input class="contatcts-data__email" type="email" name="contacts-email" id="contacts-email" placeholder="Введите e-mail" required>
+              <label class="contacts-data__labale" for="contacts-phone">Контактный телефон*:</label>
+              <input class="contacts-data__phone contacts-data-phone" type="tel" name="contacts-phone" id="contacts-phone" placeholder="Введите телефон" required>
+              <label class="contacts-data__labale" for="contacts-email">Электронная почта*:</label>
+              <input class="contatcts-data__email contatcts-data-email" type="email" name="contacts-email" id="contacts-email" placeholder="Введите e-mail" required>
             </div>
           </fieldset>
           <fieldset class="form__group impression">
-            <legend class="impression__name">Ваше Общее впечатление:</legend>
+            <legend class="impression__name impressio-name-style">Ваше Общее впечатление:</legend>
             <ul class="impression__list">
               <li class="impression__item opinion">
                 <label class="opinion__label">
                   <input class="visually-hidden opinion__input" type="radio" name="opinion-input" value="positive" checked>
                   <span class="opinion__control-mark"></span>
-                  <span class="opinion__span">Скорее положительное</span>
+                  <span class="impression__span opinion__span">Скорее положительное</span>
                 </label>
               </li>
               <li class="impression__item negative">
                 <label class="negative__label">
                   <input class="visually-hidden negative__input" type="radio" name="opinion-input" value="negative">
                   <span class="negative__control-mark"></span>
-                  <span class="negative__span">Скорее отрицательное</span>
+                  <span class="impression__span negative__span">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="impression__item difficult">
                 <label class="difficult__label">
                   <input class="visually-hidden difficult__input" type="radio" name="opinion-input" value="difficult">
                   <span class="difficult__control-mark"></span>
-                  <span class="difficult__span">Затрудняюсь ответить</span>
+                  <span class="impression__span difficult__span">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form__group visit">
-            <legend class="visit__name">посещенные достопримечательности:</legend>
+            <legend class="visit__name visit-name-style">посещенные достопримечательности:</legend>
             <ul class="visit__list">
               <li class="visit__item bridge-visit">
                 <label class="bridge-visit__label">
                   <input class="visually-hidden bridge-visit__input" type="checkbox" name="bridge" checked>
                   <span class="bridge-visit__control-mark"></span>
-                  <span class="bridge-visit__span">Мост Дьявола</span>
+                  <span class="visit__span bridge-visit__span">Мост Дьявола</span>
                 </label>
               </li>
               <li class="visit__item mountain">
                 <label class="mountain__label">
                   <input class="visually-hidden mountain__input" type="checkbox" name="mountain" checked>
                   <span class="mountain__control-mark"></span>
-                  <span class="mountain__span">Гора-Колокол</span>
+                  <span class="visit__span mountain__span">Гора-Колокол</span>
                 </label>
               </li>
               <li class="visit__item park">
                 <label class="park__label">
                   <input class="visually-hidden park__input" type="checkbox" name="park" checked>
                   <span class="park__control-mark"></span>
-                  <span class="park__span">Слайд-парк</span>
+                  <span class="visit__span park__span">Слайд-парк</span>
                 </label>
               </li>
               <li class="visit__item rocks">
                 <label class="rocks__label">
                   <input class="visually-hidden rocks__input" type="checkbox" name="rocks">
                   <span class="rocks__control-mark"></span>
-                  <span class="rocks__span">Красные скалы</span>
+                  <span class="visit__span rocks__span">Красные скалы</span>
                 </label>
               </li>
             </ul>

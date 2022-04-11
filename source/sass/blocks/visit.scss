@@ -1,0 +1,35 @@
+.visit {
+  border: none;
+}
+
+.visit__name {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.visit-name-style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.visit__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.visit__item {
+  margin-bottom: 26px;
+}
+
+.visit__span {
+  margin-left: 62px;
+}

@@ -1,0 +1,39 @@
+.impression {
+  border: none;
+}
+
+.impression__name {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.impressio-name-style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.impression__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.impression__item {
+  margin-bottom: 26px;
+}
+
+.impression__input {
+  margin-left: 62px;
+}
+
+.impression__span {
+  margin-left: 62px;
+}

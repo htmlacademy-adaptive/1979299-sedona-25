@@ -20,8 +20,10 @@
   margin: 0;
 }
 
-.form__container__button {
+.form__button {
   width: 281px;
+  height: 58px;
+  margin-left: 20px;
 }
 
 .form-button {
@@ -29,9 +31,6 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  width: 281px;
-  height: 58px;
-  margin-left: 20px;
   color: #ffffff;
   background: #81b3d2;
 }

@@ -25,12 +25,13 @@
   margin: 0;
   margin: 0 auto;
   margin-bottom: 47px;
-  width: 156px;
+  max-width: 156px;
   list-style-type: none;
-
 }
 
 .main-footer__copyright {
-  display: block;
+  margin: 0 auto;
   margin-bottom: 29px;
+  width: 156px;
+  text-align: center;
 }

@@ -1,9 +1,15 @@
-.copyright__text {
+.copyright__link {
+  position: relative;
   font-family: "pt-sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #000000;
+}
+
+.copyright__link__image {
+  position: absolute;
 }

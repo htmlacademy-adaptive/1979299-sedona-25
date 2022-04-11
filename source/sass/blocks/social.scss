@@ -11,13 +11,12 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
   }
   &::after {
     position: absolute;
-    background-image: url($image-vkontakte);
+    background-image: url("/img/footer-images/vkontakte.svg");
     content: "";
     width: 24px;
     height: 24px;
-    background-color: aqua;
-    left: 10px;
-    top: 10px;
+    left: 12px;
+    top: 12px;
   }
 }
 
@@ -30,7 +29,15 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     height: 48px;
     background-color:  #81B3D2;
   }
-
+  &::after {
+    position: absolute;
+    background-image: url("/img/footer-images/telegram.svg");
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: 12px;
+  }
 }
 
 .social__link--youtube {
@@ -41,5 +48,14 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     width: 48px;
     height: 48px;
     background-color:  #81B3D2;
+  }
+  &::after {
+    position: absolute;
+    background-image: url("/img/footer-images/youtube.svg");
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: 12px;
   }
 }

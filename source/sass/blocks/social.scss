@@ -11,7 +11,7 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
   }
   &::after {
     position: absolute;
-    background-image: url("/img/footer-images/vkontakte.svg");
+    background-image: url("../img/footer-images/vkontakte.svg");
     content: "";
     width: 24px;
     height: 24px;
@@ -31,7 +31,7 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
   }
   &::after {
     position: absolute;
-    background-image: url("/img/footer-images/telegram.svg");
+    background-image: url("../img/footer-images/telegram.svg");
     content: "";
     width: 24px;
     height: 24px;
@@ -51,7 +51,7 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
   }
   &::after {
     position: absolute;
-    background-image: url("/img/footer-images/youtube.svg");
+    background-image: url("../img/footer-images/youtube.svg");
     content: "";
     width: 24px;
     height: 24px;

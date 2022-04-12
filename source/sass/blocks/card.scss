@@ -1,0 +1,25 @@
+.card {
+  text-decoration: none;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card__author {
+  color: #333333;
+}
+
+.card__button {
+  background: transparent;
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.card-likes {
+  font-weight: 700;
+  color: #000000;
+}

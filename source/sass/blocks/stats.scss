@@ -1,0 +1,24 @@
+.stats {
+  width: 320px;
+  height: 157px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  p {
+    margin: 0;
+  }
+}
+
+.stats__slogan {
+  font-family: "pt-sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.stats__intro {
+  text-transform: uppercase;
+}

@@ -1,0 +1,52 @@
+.order {
+  display: inline-block;
+  width: 320px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.order__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  padding-top: 38px;
+  p {
+    margin: 0;
+  }
+
+}
+
+.order__list {
+  .order__item__link {
+  margin-bottom: 49px;
+  display: block;
+  padding-top: 16px;
+}
+}
+
+.order__item {
+  .order__item__interesting {
+  font-family: "pt-sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+}
+
+.order__item {
+  .order__item__description {
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 32px;
+  }
+}
+
+
+

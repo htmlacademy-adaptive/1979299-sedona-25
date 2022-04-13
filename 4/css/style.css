@@ -38,7 +38,7 @@
 .main-container__title {
   background-color: #000000;
   color: #ffffff;
-  background-image: url("/img/main-images/fone-mobile.jpg");
+  background-image: url("../img/main-images/fone-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-width: 320px;
@@ -52,6 +52,7 @@
 }
 .main-container__stats .main-container__stats-intro {
   margin-top: 35px;
+  color: #333333;
 }
 
 .stats {
@@ -144,7 +145,7 @@
   padding-top: 26px;
 }
 .advantahes__item__posts .advantages__title {
-  color: #333333;
+  color: #000000;
   margin-bottom: 11px;
 }
 .advantahes__item__posts p {
@@ -157,7 +158,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: #333333;
 }
 
 .more__item:first-child {
@@ -344,7 +345,7 @@
 }
 .social__link--vkontakte::after {
   position: absolute;
-  background-image: url("/img/footer-images/vkontakte.svg");
+  background-image: url("../img/footer-images/vkontakte.svg");
   content: "";
   width: 24px;
   height: 24px;
@@ -364,7 +365,7 @@
 }
 .social__link--telegram::after {
   position: absolute;
-  background-image: url("/img/footer-images/telegram.svg");
+  background-image: url("../img/footer-images/telegram.svg");
   content: "";
   width: 24px;
   height: 24px;
@@ -384,7 +385,7 @@
 }
 .social__link--youtube::after {
   position: absolute;
-  background-image: url("/img/footer-images/youtube.svg");
+  background-image: url("../img/footer-images/youtube.svg");
   content: "";
   width: 24px;
   height: 24px;
@@ -436,7 +437,7 @@
 }
 
 .catalog__title {
-  background-image: url("/img/main-images/fone-mobile.jpg");
+  background-image: url("../img/main-images/fone-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-width: 320px;
@@ -593,7 +594,7 @@
 .main-form__title {
   background-color: #000000;
   color: #ffffff;
-  background-image: url("/img/main-images/fone-mobile.jpg");
+  background-image: url("../img/main-images/fone-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   min-width: 320px;
@@ -629,6 +630,7 @@
 }
 
 .form-button {
+  font-family: "pt-sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -645,6 +647,7 @@
 .form-necessarily-style {
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+  font-size: 12px;
 }
 
 .yourself {
@@ -1006,6 +1009,10 @@
   box-sizing: border-box;
 }
 
+.emotions-description__input::placeholder {
+  font-family: "pt-sans", sans-serif;
+}
+
 .emotions__label {
   display: block;
   margin-bottom: 56px;
@@ -1205,5 +1212,10 @@
 .filling-overview {
   text-transform: uppercase;
   color: #333333;
+}
+
+.title-site__image {
+  margin-top: 90px;
+  margin-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */

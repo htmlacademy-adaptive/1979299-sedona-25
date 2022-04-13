@@ -1,8 +1,22 @@
 .main-header {
   position: relative;
+  height: 56px;
 }
 
 .main-header__logo {
   position: absolute;
-  left: 110px;
+  left: 67px;
+  &:focus-within .main-nav--close {
+    display: block;
+  }
+}
+
+.main-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  &:focus-within .main-nav--close {
+    display: block;
+  }
 }

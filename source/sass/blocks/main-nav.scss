@@ -1,12 +1,11 @@
 .main-nav {
   width: 320px;
-  display: contents;
+  display: block;
+  position: absolute;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  right: 0;
-  top: 0;
+.main-nav--close {
+  display: none;
 }
 
 .main-nav__list {

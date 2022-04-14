@@ -4,12 +4,21 @@
   position: absolute;
 }
 
-.main-nav--close {
-  display: none;
-}
+// .main-nav--close {
+//   display: none;
+// }
 
 .main-nav__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+// tablet-version
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    width: 768px;
+  }
 }

@@ -6,17 +6,27 @@
 .main-header__logo {
   position: absolute;
   left: 67px;
-  &:focus-within .main-nav--close {
-    display: block;
-  }
 }
 
 .main-header__toggle {
   position: absolute;
   top: 0;
   right: 0;
-  cursor: pointer;
-  &:focus-within .main-nav--close {
-    display: block;
+  &::after {
+    position: absolute;
+    background-image: url("../img/header-images/icon-menu.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 23px;
+    height: 22px;
+    right: 21px;
+    top: 17px;
   }
 }
+
+.main-header__toggle:focus-within .main-nav--close {
+  display: block;
+}
+
+// tablet-version
+

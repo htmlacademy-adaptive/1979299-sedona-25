@@ -24,9 +24,19 @@
   }
 }
 
-.main-header__toggle:focus-within .main-nav--close {
+.main-header__toggle:focus-within + .main-nav--close {
   display: block;
 }
 
 // tablet-version
+@use "../global/variables.scss";
 
+@media (min-width: $tablet-width) {
+  .main-header {
+    height: 444px;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}

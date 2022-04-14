@@ -1,12 +1,10 @@
+@use "../global/variables.scss";
+
 .main-nav {
+  display: none;
   width: 320px;
-  display: block;
   position: absolute;
 }
-
-// .main-nav--close {
-//   display: none;
-// }
 
 .main-nav__list {
   padding: 0;
@@ -16,9 +14,9 @@
 
 // tablet-version
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav {
-    display: flex;
-    width: 768px;
+    display: block;
+    position: static;
   }
 }

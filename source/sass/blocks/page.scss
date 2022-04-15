@@ -18,3 +18,10 @@
     width: 768px;
   }
 }
+
+// desktop-version
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1200px;
+  }
+}

@@ -29,3 +29,12 @@
     width: 153px;
   }
 }
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: block;
+    width: 1200px;
+  }
+}

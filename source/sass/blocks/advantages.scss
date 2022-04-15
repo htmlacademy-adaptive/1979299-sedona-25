@@ -146,3 +146,16 @@
     box-sizing: border-box;
   }
 }
+
+// desktop-version
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 256px 256px 256px 256px;
+  }
+
+  .advantahes__item__posts {
+    width: 400px;
+  }
+}

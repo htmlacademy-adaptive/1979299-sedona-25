@@ -1,4 +1,4 @@
-@use "../global/variables.scss";
+@import "./global/variables.scss";
 
 .main-nav {
   display: none;
@@ -17,6 +17,15 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
-    position: static;
+    width: 768px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-item {
+    width: 153px;
   }
 }

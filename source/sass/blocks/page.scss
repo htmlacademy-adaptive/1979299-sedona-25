@@ -1,8 +1,20 @@
+@import "./global/variables.scss";
+
 .page__body {
   width: 320px;
+  margin: 0;
+  padding: 0;
   margin: 0 auto;
   font-family: "pt-sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 768px;
+  }
 }

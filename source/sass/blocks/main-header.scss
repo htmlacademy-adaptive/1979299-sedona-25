@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .main-header {
   position: relative;
   height: 56px;
@@ -29,14 +31,10 @@
 }
 
 // tablet-version
-@use "../global/variables.scss";
 
 @media (min-width: $tablet-width) {
-  .main-header {
-    height: 444px;
-  }
-
-  .main-header__toggle {
-    display: none;
+  .main-header__logo {
+    left: 292px;
   }
 }
+

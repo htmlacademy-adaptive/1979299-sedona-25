@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .site-list__item {
   position: relative;
   display: block;
@@ -58,5 +60,13 @@
     height: 22px;
     right: 19px;
     top: 17px;
+  }
+}
+
+// table-version
+
+@media (min-width: $tablet-width) {
+  .site-list__button::before {
+    display: none;
   }
 }

@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .stats {
   width: 320px;
   height: 157px;
@@ -22,3 +24,11 @@
 .stats__intro {
   text-transform: uppercase;
 }
+
+// / table-version
+
+@media (min-width: $tablet-width) {
+  .stats {
+    width: 520px;
+  }
+  }

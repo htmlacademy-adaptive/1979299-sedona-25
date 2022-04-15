@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .advantages__list {
   padding: 0;
   margin: 0;
@@ -5,14 +7,17 @@
 }
 
 .advantages__item {
-  text-align: center;
-
   h3,
   p {
     margin: 0;
     padding: 0;
   }
 }
+
+.advantages__item:not(:nth-child(3)) {
+  text-align: center;
+}
+
 
 .advantages__item__header {
   width: 320px;
@@ -81,3 +86,22 @@
     color: #333333;
   }
 }
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+//   .advantages__item {
+//     display: flex;
+//   }
+
+//   .advantages__item__header {
+//     width: 256px;
+//     height: 256px;
+//     box-sizing: border-box;
+//   }
+
+//   .advantages__image-city {
+//     height: 256px;
+//     flex-grow: 1;
+//   }
+// }

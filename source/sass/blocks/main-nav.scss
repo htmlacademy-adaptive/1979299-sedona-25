@@ -1,16 +1,40 @@
-.main-nav {
-  width: 320px;
-  display: contents;
-}
+@import "./global/variables.scss";
 
-.main-nav__toggle {
+.main-nav {
+  display: none;
+  width: 320px;
   position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .main-nav__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+    width: 768px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-item {
+    width: 153px;
+  }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: block;
+    width: 1200px;
+  }
 }

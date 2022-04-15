@@ -1,8 +1,48 @@
+@import "./global/variables.scss";
+
 .main-header {
   position: relative;
+  height: 56px;
 }
 
 .main-header__logo {
   position: absolute;
-  left: 110px;
+  left: 67px;
 }
+
+.main-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  &::after {
+    position: absolute;
+    background-image: url("../img/header-images/icon-menu.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 23px;
+    height: 22px;
+    right: 21px;
+    top: 17px;
+  }
+}
+
+.main-header__toggle:focus-within + .main-nav--close {
+  display: block;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+    left: 292px;
+  }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .main-header__logo {
+    left: 500px;
+  }
+}
+

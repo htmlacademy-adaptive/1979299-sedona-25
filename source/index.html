@@ -66,8 +66,6 @@
                 <p class="advantages__description">— №1 —</p>
                 <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
-            </li>
-            <li class="advantages__item">
               <img class="advantages__image-city city-image" src="img/main-images/city.jpg" width="320" height="260" alt="Городской пейзаж.">
             </li>
             <li class="advantages__item more__item housing more__item-hous more__item--visible">
@@ -83,15 +81,13 @@
               <p class="more__item__description souvenirs__description">Не только китайского, но и местного производства!</p>
             </li>
 
-            <li class="advantages__item advantages__item--selected">
+            <li class="advantages__item advantages__item--selected advantages-bridge__description">
               <div class="advantages__item__header advantages-bridge">
                 <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
                 <p class="advantages__description advantages-bridge__description">— №2 —</p>
                 <p class="advantages__description advantages-bridge__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-            </li>
-            <li class="advantages__item bridge">
-              <img class="bridge__image" src="img/main-images/bridge.jpg" width="320" height="260" alt="Мост Дьявола.">
+              <img class="advantages__image-bridge bridge__image" src="img/main-images/bridge.jpg" width="320" height="260" alt="Мост Дьявола.">
             </li>
 
             <li class="advantages__item advantages__item--selected">
@@ -119,17 +115,18 @@
       </section>
       <section class="order">
           <h2 class="visually-hidden">Заказ гостиницы</h2>
-          <ul class="order__list">
-            <li class="order__item">
+          <div class="order__list">
+            <div class="order__item">
               <p class="order__item__interesting">ЗАИНТЕРЕСОВАЛИСЬ?</p>
               <p class="order__item__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            </li>
+            </div>
             <a class="order__item__link search-link" href="#">Найти Гостиницу</a>
             <img class="order__item__map search-map search-map-marker" src="img/main-images/map.jpg" width="320" height="350" alt="карта поиска.">
-          </ul>
+          </div>
       </section>
     </main>
-    <footer class="main-fotter">
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
         <a class="main-footer__link" href="#">#visitSEDONA</a>
           <ul class="main-footer__list social">
             <li class="social__item">
@@ -147,6 +144,10 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
           </svg><span class="visually-hidden">ссылка на сайт HTML Academy.</span></a>
         </div>
+      </div>
+
+
+
     </footer>
   </body>
 </html>

@@ -7,7 +7,7 @@
 }
 
 .main-footer__link {
-  margin-top: 28.5px;
+  margin-top: 52.5px;
   margin-bottom: 33.5px;
   display: block;
   font-family: "pt-sans", sans-serif;
@@ -29,7 +29,7 @@
   list-style-type: none;
   grid-template-columns: repeat(3, 48px);
   gap: 6px;
-  margin-left: 58px;
+  margin-left: 70px;
 }
 
 .main-footer__copyright {
@@ -46,6 +46,7 @@
     display: flex;
     justify-content: space-between;
     padding: 36px 60px 36px 45px;
+    margin-top: 64px;
   }
 
   .main-footer__link,

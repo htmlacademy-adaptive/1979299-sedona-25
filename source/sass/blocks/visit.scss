@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .visit {
   border: none;
 }
@@ -33,3 +35,16 @@
 .visit__span {
   margin-left: 62px;
 }
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .visit__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(238px, 280px));
+    max-width: 960px;
+
+  }
+}
+  // desktop-version
+

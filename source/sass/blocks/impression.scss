@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .impression {
   border: none;
 }
@@ -37,3 +39,21 @@
 .impression__span {
   margin-left: 62px;
 }
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .impression__list {
+    display: grid;
+    grid-template-columns: 280px 280px;
+  //   grid-template-columns: repeat(auto-fill, minmax(238px, 280px));
+
+}
+
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+}
+

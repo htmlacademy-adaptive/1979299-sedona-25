@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .thoto__item {
   margin-bottom: 50px;
 }
@@ -35,4 +37,59 @@
 
 .thoto__number-likes {
   margin-left: 12px;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .thoto__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    margin-bottom: 58px;
+  }
+
+  .thoto__item:first-child {
+    grid-column: 1 / 3;
+  }
+
+  .thoto__item {
+    margin: 0;
+  }
+
+  .thoto__link__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .thoto__list {
+    grid-template-columns: 400px 400px 400px;
+    position: relative;
+    margin-bottom: 62px;
+  }
+
+  .thoto__item:first-child {
+    grid-column: 1 / 4;
+  }
+
+  .thoto__item {
+    position: relative;
+  }
+
+
+  .thoto__link__wrapper {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    top: 208px;
+  }
 }

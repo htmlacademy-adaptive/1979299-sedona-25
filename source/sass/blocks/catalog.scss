@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .catalog__thoto {
   width: 280px;
   margin-left: 20px;
@@ -52,4 +54,45 @@
   padding: 0;
   text-align: center;
   margin-bottom: 38px;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .catalog__thoto__container {
+    width: 458px;
+    margin: auto;
+    margin-bottom: 63px;
+  }
+
+  .catalog__thoto {
+    width: 648px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .catalog__video {
+    width: 648px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .catalog__thoto {
+    width: 1200px;
+    margin: 0;
+  }
+
+  .catalog__video {
+    width: 800px;
+    margin-left: 200px;
+    text-align: center;
+  }
 }

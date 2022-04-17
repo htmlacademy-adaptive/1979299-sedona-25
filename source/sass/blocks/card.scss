@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .card {
   text-decoration: none;
 }
@@ -22,4 +24,37 @@
 .card-likes {
   font-weight: 700;
   color: #000000;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .card__image {
+    width: 100%;
+  }
+
+  .card__wrapper {
+    background-color: #F2F2F2;
+  }
+
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .card__wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .card__title,
+  .card__author,
+  .card-likes {
+    color: #ffffff;
+  }
+
+  .card__button {
+    fill: #ffffff;
+  }
+
+
 }

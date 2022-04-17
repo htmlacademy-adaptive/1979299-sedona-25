@@ -23,7 +23,6 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 280px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -45,9 +44,10 @@
 @media (min-width: $tablet-width) {
   .impression__list {
     display: grid;
-    grid-template-columns: 280px 280px;
-  //   grid-template-columns: repeat(auto-fill, minmax(238px, 280px));
-
+    grid-template-columns: repeat(auto-fill, minmax(238px, 280px));
+    gap: 16px;
+    margin-left: 46px;
+    margin-bottom: 48px;
 }
 
 }
@@ -55,5 +55,8 @@
 // desktop-version
 
 @media (min-width: $desktop-width) {
+  .impression__list {
+    margin-bottom: 73px;
+  }
 }
 

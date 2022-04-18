@@ -98,6 +98,14 @@
   color: #333333;
 }
 
+@media (min-width: 768px) {
+  .main-container__title {
+    height: 518px;
+    background-image: url("../img/main-images/fone-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -30px;
+  }
+}
 .stats {
   width: 320px;
   height: 157px;
@@ -654,7 +662,11 @@
   min-height: 158px;
   background-color: #ffffff;
   color: #000000;
-  margin: 0 auto;
+  text-align: center;
+}
+
+.catalog__image {
+  margin-top: 52px;
 }
 
 .catalog__thoto__container {
@@ -841,6 +853,7 @@
 
 @media (min-width: 768px) {
   .card__image {
+    display: block;
     width: 100%;
   }
 
@@ -906,6 +919,7 @@
   background-color: #ffffff;
   color: #000000;
   margin: 0 auto;
+  text-align: center;
 }
 
 .main-form__title {
@@ -922,6 +936,10 @@
   width: 320px;
   height: 198px;
   text-align: center;
+}
+
+.main-form__image {
+  margin-top: 52px;
 }
 
 .main-form-filling__title {
@@ -1080,6 +1098,12 @@
   padding: 16px 0 16px 16px;
 }
 
+@media (min-width: 1200px) {
+  .yourself__container {
+    width: 430px;
+    margin-left: 0;
+  }
+}
 .contacts {
   border: none;
 }
@@ -1144,6 +1168,12 @@
   padding: 16px 0 16px 16px;
 }
 
+@media (min-width: 1200px) {
+  .contacts__container {
+    width: 420px;
+    margin-right: 0;
+  }
+}
 .impression {
   border: none;
 }

@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .main-container {
   background-color: #ffffff;
   color: #000000;
@@ -21,5 +23,17 @@
   .main-container__stats-intro {
     margin-top: 35px;
     color: #333333;
+  }
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .main-container__title {
+    height: 518px;
+    background-image: url("../img/main-images/fone-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -30px;
+
   }
 }

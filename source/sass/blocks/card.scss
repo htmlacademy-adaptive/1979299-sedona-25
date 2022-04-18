@@ -30,6 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .card__image {
+    display: block;
     width: 100%;
   }
 

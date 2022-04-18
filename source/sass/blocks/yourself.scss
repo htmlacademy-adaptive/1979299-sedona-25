@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .yourself {
   border: none;
 }
@@ -61,4 +63,14 @@
     color: #000000;
     padding: 16px 0 16px 16px;
   }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .yourself__container {
+    width: 430px;
+    margin-left: 0;
+  }
+
 }

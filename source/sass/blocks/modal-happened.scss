@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .modal-happened {
   position: fixed;
   top: 0;
@@ -15,6 +17,7 @@
 .modal-happened__container {
   margin: auto;
   padding: 36px 0 0 0;
+  margin-top: 402px;
 }
 
 .modal-happened__container--auth {
@@ -74,4 +77,31 @@
   text-transform: uppercase;
   color: #ffffff;
   background: #81b3d2;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .modal-happened__container {
+    margin-top: 162px;
+    width: 640px;
+  }
+
+
+  .modal-happened__container__wrapper {
+    width: 640px;
+  }
+
+  .modal-happened__container__button {
+    width: 468px;
+    margin-left: 84px;
+  }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .modal-happened__container {
+    margin-top: 145px
+  }
 }

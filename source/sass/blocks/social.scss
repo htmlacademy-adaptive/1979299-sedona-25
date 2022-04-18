@@ -1,5 +1,3 @@
-$image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/second-draft/1979299-sedona-25/source/img/footer-images/vkontakte.svg";
-
 .social__link--vkontakte {
   position: relative;
   &::before {
@@ -7,6 +5,8 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     content: "";
     width: 48px;
     height: 48px;
+    left: -12px;
+    top: -12px;
     background-color:  #81B3D2;
   }
   &::after {
@@ -15,8 +15,6 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     content: "";
     width: 24px;
     height: 24px;
-    left: 12px;
-    top: 12px;
   }
 }
 
@@ -27,6 +25,8 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     content: "";
     width: 48px;
     height: 48px;
+    left: -12px;
+    top: -12px;
     background-color:  #81B3D2;
   }
   &::after {
@@ -35,8 +35,6 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     content: "";
     width: 24px;
     height: 24px;
-    left: 12px;
-    top: 12px;
   }
 }
 
@@ -47,6 +45,8 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     content: "";
     width: 48px;
     height: 48px;
+    left: -12px;
+    top: -12px;
     background-color:  #81B3D2;
   }
   &::after {
@@ -55,7 +55,5 @@ $image-vkontakte: "c:/Users/yanka/OneDrive/Рабочий стол/HTML Akademy/
     content: "";
     width: 24px;
     height: 24px;
-    left: 12px;
-    top: 12px;
   }
 }

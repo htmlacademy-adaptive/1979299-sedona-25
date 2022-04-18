@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .video__title {
   font-weight: 700;
   font-size: 18px;
@@ -9,4 +11,12 @@
 .video__overview {
   text-transform: uppercase;
   color: #333333;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .video__image {
+    width: 100%;
+  }
 }

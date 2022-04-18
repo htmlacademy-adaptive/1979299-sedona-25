@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .modal-error {
   position: fixed;
   top: 0;
@@ -14,6 +16,7 @@
 
 .modal-error__container {
   margin: auto;
+  margin-top: 116px;
   padding: 45px 0 35px 0;
 }
 
@@ -69,3 +72,24 @@
   background: #81b3d2;
 }
 
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .modal-error__container {
+    margin-top: 283px;
+    width: 400px;
+  }
+
+  .modal-error__container__button {
+    width: 272px;
+    margin-left: 60px;
+  }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .modal-error__container {
+    margin-top: 244px;
+  }
+}

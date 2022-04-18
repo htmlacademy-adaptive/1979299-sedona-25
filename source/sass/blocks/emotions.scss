@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .emotions {
   border: none;
   width: 280px;
@@ -41,4 +43,21 @@
 .emotions__label {
   display: block;
   margin-bottom: 56px;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .emotions {
+    width: 648px;
+    margin: auto;
+  }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .emotions {
+    width: 768px;
+  }
 }

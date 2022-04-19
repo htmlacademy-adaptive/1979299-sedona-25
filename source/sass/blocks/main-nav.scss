@@ -1,15 +1,64 @@
 @import "./global/variables.scss";
 
 .main-nav {
-  display: none;
-  width: 320px;
-  position: absolute;
+  // position: absolute;
+  position: relative;
+  top: 0;
+  right: 0;
 }
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+  left: auto;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 19px;
+    width: 27px;
+    height: 4px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#ffffff, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+
+
+
 
 .main-nav__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
 }
 
 // tablet-version

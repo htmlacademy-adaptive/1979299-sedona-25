@@ -3,11 +3,12 @@
 .main-header {
   position: relative;
   height: 56px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header__logo {
-  position: absolute;
-  left: 67px;
+  text-align: center;
 }
 
 .main-header__toggle {
@@ -23,26 +24,40 @@
     height: 22px;
     right: 21px;
     top: 17px;
+
+    &:hover {
+      background-color: rgba(129, 179, 210, 0.6);
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
-.main-header__toggle:focus-within + .main-nav--close {
-  display: block;
+// .main-header__toggle:focus-within + .main-nav--close {
+//   display: block;
+// }
+
+
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .main-header__toggle {
+    display: block;
+  }
 }
 
 // tablet-version
 
 @media (min-width: $tablet-width) {
-  .main-header__logo {
-    left: 292px;
+  .main-header__toggle {
+    display: none;
   }
 }
 
 // desktop-version
 
 @media (min-width: $desktop-width) {
-  .main-header__logo {
-    left: 500px;
-  }
+
 }
 

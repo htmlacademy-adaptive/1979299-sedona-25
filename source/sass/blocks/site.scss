@@ -1,0 +1,31 @@
+@import "./global/variables.scss";
+
+
+
+.site-list a {
+  position: relative;
+  display: block;
+  font-family: "pt-sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 17px 0 12px 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+
+
+
+
+
+
+@media (min-width: $tablet-width) {
+
+}

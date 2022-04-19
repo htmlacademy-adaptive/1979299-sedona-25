@@ -13,8 +13,6 @@
 }
 
 
-
-
 // mobile-only-version
 
 @media (max-width: $mobile-width-only) {
@@ -22,8 +20,9 @@
     display: none;
   }
 
-
-}
+  .main-nav--opened .site-list {
+    display: block;
+  }
 
 .main-nav--closed {
   .main-header__toggle--opened {
@@ -34,6 +33,24 @@
     display: none;
   }
 }
+
+.main-nav--opened {
+  .main-header__toggle--opened {
+    display: none;
+  }
+
+  .main-header__toggle--closed {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  width: 320px;
+}
+
+}
+
+
 
 // tablet-version
 

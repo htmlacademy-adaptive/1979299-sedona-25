@@ -52,6 +52,12 @@
     color: #000000;
     background-color: inherit;
     border: none;
+    &:hover {
+      color: #81B3D2;
+    }
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .site-list::before {

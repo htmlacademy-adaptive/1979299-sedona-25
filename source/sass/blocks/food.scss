@@ -44,3 +44,11 @@
     font-size: 21px;
   }
 }
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .food::before {
+    left: 162px;
+  }
+}

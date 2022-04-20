@@ -40,10 +40,18 @@
     top: 60px;
     left: 90px;
   }
-  
+
   .housing__title {
     font-size: 21px;
   }
 
 
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .housing::before {
+    left: 162px;
+  }
 }

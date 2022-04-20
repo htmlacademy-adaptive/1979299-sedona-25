@@ -206,8 +206,6 @@
     box-sizing: border-box;
   }
 
-
-
   .advantages__title {
     font-size: 21px;
   }
@@ -222,7 +220,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 256px 256px 256px 256px;
+    grid-template-rows: 256px auto 256px 256px;
   }
 
   .advantahes__item__posts {
@@ -231,5 +229,11 @@
 
   .advantages__item__header {
     width: 400px;
+  }
+
+  .advantahes__item__posts .advantages__title {
+    width: 158px;
+    margin: 0 auto;
+    margin-bottom: 21px;
   }
 }

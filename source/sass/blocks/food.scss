@@ -1,3 +1,20 @@
+@import "./global/variables.scss";
+
+.food {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/main-images/food.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -55px;
+    top: -2px;
+  }
+}
+
 .food__title {
   font-family: "pt-sans", sans-serif;
   font-style: normal;
@@ -10,4 +27,20 @@
 
 .food__description {
   text-transform: uppercase;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .food::before {
+    width: 75px;
+    height: 72px;
+    background-size: cover;
+    top: 60px;
+    left: 90px;
+  }
+
+  .food__title {
+    font-size: 21px;
+  }
 }

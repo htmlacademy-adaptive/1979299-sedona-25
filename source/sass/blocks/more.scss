@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .more__item:first-child {
   margin-bottom: 23px;
 }
@@ -22,6 +24,22 @@
   margin-left: 62px;
   margin-bottom: 52px;
   .more__item__title {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
   }
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .more__item:nth-child(2),
+  .more__item:nth-child(3),
+  .more__item:nth-child(4) {
+    margin: 0;
+    padding: 153px 36px 59px;
+    .more__item__title {
+      margin-bottom: 21px;
+    }
+  }
+
+
 }

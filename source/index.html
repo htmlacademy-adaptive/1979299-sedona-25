@@ -13,17 +13,11 @@
         <img class="main-header__logo-image" src="img/header-images/logotype-sedona.svg" width="185" height="96" alt="Город «Седона».">
       </a>
 
-
       <nav class="main-nav main-nav--closed main-nav--opened main-nav--nojs">
-        <button class="main-header__toggle main-header__toggle--opened button" type="button">
+        <button class="main-header__toggle button" type="button">
           <svg aria-hidden="true" focusable="false" width="23" height="22">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
         </svg><span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <button class="main-header__toggle main-header__toggle--closed button" type="button">
-          <svg aria-hidden="true" focusable="false" width="22" height="22">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
-        </svg><span class="visually-hidden">Закрыть меню.</span>
         </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item-index site-list__item--active">
@@ -31,17 +25,17 @@
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item-catalog site-list__item--active">
+            <li class="site-list__item site-list__item-catalog">
               <a class="site-list__link site-list-link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item-form site-list__item--active">
+            <li class="site-list__item site-list__item-form">
               <a class="site-list__link site-list-link" href="form.html">
                 Форма Отзыва
               </a>
             </li>
-            <li class="site-list__item site-list__item-academy site-list__item--active">
+            <li class="site-list__item site-list__item-academy">
               <a class="site-list__link site-list-link" href="#">
                 HTML ACADEMY
               </a>
@@ -126,10 +120,12 @@
           <div class="order__list">
             <div class="order__item">
               <p class="order__item__interesting">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-              <p class="order__item__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+              <p class="order__item__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
             <a class="order__item__link search-link" href="#">Найти Гостиницу</a>
-            <img class="order__item__map search-map search-map-marker" src="img/main-images/map.jpg" width="320" height="350" alt="карта поиска.">
+            <div class="order__item__wrapper-map">
+              <img class="order__item__map search-map search-map-marker" src="img/main-images/map.jpg" width="320" height="350" alt="карта поиска.">
+            </div>
           </div>
       </section>
     </main>
@@ -154,6 +150,5 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>

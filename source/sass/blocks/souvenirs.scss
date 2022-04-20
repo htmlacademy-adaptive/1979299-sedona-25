@@ -1,3 +1,20 @@
+@import "./global/variables.scss";
+
+.souvenirs {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/main-images/souvenirs.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -50px;
+    top: -2px;
+  }
+}
+
 .souvenirs__title {
   font-family: "pt-sans", sans-serif;
   font-style: normal;
@@ -10,4 +27,20 @@
 
 .souvenirs__description {
   text-transform: uppercase;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .souvenirs::before {
+    width: 75px;
+    height: 72px;
+    background-size: cover;
+    top: 60px;
+    left: 90px;
+  }
+
+  .souvenirs__title {
+    font-size: 21px;
+  }
 }

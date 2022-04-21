@@ -1,5 +1,34 @@
+@import "./global/variables.scss";
+
 .title-site__image {
   margin: auto;
   display: block;
   padding-top: 90px;
+}
+
+.title-site__image-decoration {
+  display: block;
+  margin-top: 28px;
+  fill: #ffffff;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .title-site__image {
+    width: 461px;
+  }
+
+  .title-site__image-decoration {
+    width: 768px;
+  }
+}
+
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .title-site__image {
+    width: 459px;
+  }
 }

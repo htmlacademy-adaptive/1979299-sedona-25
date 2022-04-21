@@ -43,6 +43,10 @@
   .food__title {
     font-size: 21px;
   }
+
+  .food__description {
+    width: 157px;
+  }
 }
 
 // desktop-version
@@ -50,5 +54,9 @@
 @media (min-width: $desktop-width) {
   .food::before {
     left: 162px;
+  }
+
+  .food__description {
+    width: 283px;
   }
 }

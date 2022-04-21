@@ -170,7 +170,7 @@
 
 .advantages__item h3,
 .advantages__item p {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -247,22 +247,22 @@
   text-align: left;
 }
 
-.advantahes__item__posts {
+.advantages__item__posts {
   background-color: #eeeeee;
   height: 150px;
   padding: 33px;
   padding-bottom: 1px;
   padding-top: 17px;
 }
-.advantahes__item__posts .advantages__title {
+.advantages__item__posts .advantages__title {
   color: #000000;
   margin-bottom: 11px;
 }
-.advantahes__item__posts p {
+.advantages__item__posts p {
   margin-bottom: 17px;
 }
 
-.advantahes__item__posts .advantages__description {
+.advantages__item__posts .advantages__description {
   font-family: "pt-sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -345,7 +345,7 @@
     order: 2;
   }
 
-  .advantahes__item__posts {
+  .advantages__item__posts {
     width: 256px;
     height: 256px;
     box-sizing: border-box;
@@ -358,6 +358,10 @@
   .advantages__item__header {
     padding: 43px 36px;
   }
+
+  .advantages__description-first {
+    font-weight: 400;
+  }
 }
 @media (min-width: 1200px) {
   .advantages__list {
@@ -366,7 +370,7 @@
     grid-template-rows: 256px auto 256px 256px;
   }
 
-  .advantahes__item__posts {
+  .advantages__item__posts {
     width: 400px;
   }
 
@@ -374,10 +378,22 @@
     width: 400px;
   }
 
-  .advantahes__item__posts .advantages__title {
+  .advantages__item__posts .advantages__title {
     width: 158px;
     margin: 0 auto;
     margin-bottom: 21px;
+  }
+
+  .advantages__title-first {
+    width: 210px;
+  }
+
+  .advantages__item__header-second {
+    padding: 43px 92px;
+  }
+
+  .advantages__title-second {
+    width: 150px;
   }
 }
 .more__item:first-child {
@@ -515,10 +531,18 @@
   .food__title {
     font-size: 21px;
   }
+
+  .food__description {
+    width: 157px;
+  }
 }
 @media (min-width: 1200px) {
   .food::before {
     left: 162px;
+  }
+
+  .food__description {
+    width: 283px;
   }
 }
 .souvenirs {
@@ -548,6 +572,9 @@
 .souvenirs__description {
   text-transform: uppercase;
 }
+.souvenirs__description br {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .souvenirs::before {
@@ -561,10 +588,21 @@
   .souvenirs__title {
     font-size: 21px;
   }
+
+  .souvenirs__description {
+    width: 195px;
+  }
+  .souvenirs__description br {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .souvenirs::before {
     left: 162px;
+  }
+
+  .souvenirs__description {
+    width: 220px;
   }
 }
 .bridge-visit__label {
@@ -1992,5 +2030,26 @@
   margin: auto;
   display: block;
   padding-top: 90px;
+}
+
+.title-site__image-decoration {
+  display: block;
+  margin-top: 28px;
+  fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .title-site__image {
+    width: 461px;
+  }
+
+  .title-site__image-decoration {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .title-site__image {
+    width: 459px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

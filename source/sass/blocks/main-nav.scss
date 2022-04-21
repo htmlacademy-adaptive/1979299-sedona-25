@@ -17,7 +17,25 @@
 // mobile-only-version
 
 @media (max-width: $mobile-width-only) {
+  .main-nav--nojs {
+    .main-header__toggle {
+      display: none;
+    }
+    .site-list {
+      position: static;
+    }
 
+    .main-header__toggle:focus-within + .site-list {
+      display: none;
+    }
+
+    .main-header__toggle:focus-within {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 // tablet-version

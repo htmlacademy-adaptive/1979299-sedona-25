@@ -49,9 +49,6 @@
 
   .souvenirs__description {
     width: 195px;
-    br {
-      display: none;
-    }
   }
 }
 
@@ -64,5 +61,8 @@
 
   .souvenirs__description {
     width: 220px;
+     br {
+      display: inline;
+     }
   }
 }

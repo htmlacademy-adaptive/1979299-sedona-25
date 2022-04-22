@@ -19,7 +19,7 @@
   bottom: 0;
   left: 0;
   -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 // tablet-version
@@ -35,6 +35,7 @@
 
   .title-site__image-decoration {
     right: -227px;
+    margin-bottom: -1px;
   }
 
   .title-site__image-decoration-duble {

@@ -1,6 +1,5 @@
 .page__body {
   width: 320px;
-  margin: 0;
   padding: 0;
   margin: 0 auto;
   font-family: "pt-sans", sans-serif;
@@ -12,6 +11,7 @@
 @media (min-width: 768px) {
   .page__body {
     width: 768px;
+    overflow-x: hidden;
   }
 }
 @media (min-width: 1200px) {
@@ -197,6 +197,10 @@
   text-align: start;
 }
 
+.advantages__item:nth-child(1) .advantages__description {
+  width: 282px;
+}
+
 .advantages__item:nth-child(6),
 .advantages__item:nth-child(7) {
   position: relative;
@@ -225,6 +229,9 @@
 
 .advantages__item__header p:last-child {
   margin-top: 17px;
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages__title {
@@ -338,6 +345,21 @@
     display: none;
   }
 
+  .advantages__item:nth-child(5) .advantages__title {
+    width: 150px;
+    margin: auto;
+  }
+
+  .advantages__item:nth-child(1) .advantages__description {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__item:nth-child(7) .advantages__description {
+    width: 148px;
+  }
+
   .advantages__item__header {
     width: 256px;
     height: 256px;
@@ -382,6 +404,16 @@
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 256px auto 256px 256px;
+  }
+
+  .advantages__item:nth-child(1) .advantages__description {
+    width: 290px;
+  }
+
+  .advantages__item:nth-child(7) .advantages__description {
+    width: 277px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .advantages__item__posts {
@@ -481,6 +513,7 @@
 .housing__description {
   text-transform: uppercase;
   color: #333333;
+  width: 225px;
 }
 
 @media (min-width: 768px) {
@@ -499,6 +532,11 @@
 @media (min-width: 1200px) {
   .housing::before {
     left: 162px;
+  }
+
+  .housing__description {
+    width: 282px;
+    margin: auto;
   }
 }
 .food {
@@ -602,9 +640,6 @@
   .souvenirs__description {
     width: 195px;
   }
-  .souvenirs__description br {
-    display: none;
-  }
 }
 @media (min-width: 1200px) {
   .souvenirs::before {
@@ -613,6 +648,9 @@
 
   .souvenirs__description {
     width: 220px;
+  }
+  .souvenirs__description br {
+    display: inline;
   }
 }
 .bridge-visit__label {
@@ -2062,6 +2100,7 @@
 
   .title-site__image-decoration {
     right: -227px;
+    margin-bottom: -1px;
   }
 
   .title-site__image-decoration-duble {

@@ -19,6 +19,15 @@
   text-align: center;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background-color: #669EC0;
+  }
+
+  &:active {
+    background-color: #669EC0;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .site-list::before {

@@ -7,9 +7,19 @@
 }
 
 .title-site__image-decoration {
-  display: block;
-  margin-top: 28px;
+  position: absolute;
   fill: #ffffff;
+  bottom: 0;
+  right: 0;
+}
+
+.title-site__image-decoration-duble {
+  position: absolute;
+  fill: #ffffff;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 // tablet-version
@@ -22,8 +32,17 @@
   .title-site__image-decoration {
     width: 768px;
   }
-}
 
+  .title-site__image-decoration {
+    right: -227px;
+  }
+
+  .title-site__image-decoration-duble {
+    left: -227px;
+    width: 100%;
+    bottom: -1px;
+  }
+}
 
 // desktop-version
 
@@ -31,4 +50,13 @@
   .title-site__image {
     width: 459px;
   }
+
+  .title-site__image-decoration {
+    right: -8px;
+  }
+
+  .title-site__image-decoration-duble {
+    left: -440px;
+    width: 100%;
+}
 }

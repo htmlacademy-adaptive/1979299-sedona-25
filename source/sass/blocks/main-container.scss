@@ -7,6 +7,8 @@
 }
 
 .main-container__title {
+  position: relative;
+  z-index: 0;
   background-color: #000000;
   color: #ffffff;
   background-image: url("../img/main-images/fone-mobile.jpg");
@@ -33,12 +35,12 @@
     height: 518px;
     background-image: url("../img/main-images/fone-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: 50% -30px;
+    background-position: 50% 0;
 
   }
 }
 
 // desktop-version
 @media (min-width: $desktop-width) {
-  
+
 }

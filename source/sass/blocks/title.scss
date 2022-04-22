@@ -18,7 +18,6 @@
   fill: #ffffff;
   bottom: 0;
   left: 0;
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
@@ -31,9 +30,6 @@
 
   .title-site__image-decoration {
     width: 768px;
-  }
-
-  .title-site__image-decoration {
     right: -227px;
     margin-bottom: -1px;
   }
@@ -59,5 +55,5 @@
   .title-site__image-decoration-duble {
     left: -440px;
     width: 100%;
-}
+  }
 }

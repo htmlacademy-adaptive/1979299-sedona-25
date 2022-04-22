@@ -19,15 +19,6 @@
   text-align: center;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-
-  &:hover {
-    background-color: #669EC0;
-  }
-
-  &:active {
-    background-color: #669EC0;
-    color: rgba(255, 255, 255, 0.3);
-  }
 }
 
 .site-list::before {
@@ -41,12 +32,19 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
-
-
 // mobile-only-version
 
 @media (max-width: $mobile-width-only) {
+  .site-list a {
+    &:hover {
+      background-color: #669ec0;
+    }
 
+    &:active {
+      background-color: #669ec0;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 // tablet-version
@@ -61,9 +59,11 @@
     color: #000000;
     background-color: inherit;
     border: none;
+
     &:hover {
-      color: #81B3D2;
+      color: #81b3d2;
     }
+
     &:active {
       color: rgba(0, 0, 0, 0.3);
     }
@@ -77,7 +77,7 @@
     grid-column: 4/5;
   }
 
-  .site-list__item--active .site-list__link  {
+  .site-list__item--active .site-list__link {
     color: #766357;
   }
 }

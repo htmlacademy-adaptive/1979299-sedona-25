@@ -8,6 +8,20 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    color: rgba(129, 179, 210, 1);
+  }
+  &:hover .copyright__link__image {
+    fill: rgba(129, 179, 210, 1);
+  }
+
+  &:active {
+    color: rgba(179, 179, 179, 1);
+  }
+  &:active .copyright__link__image {
+    fill: rgba(179, 179, 179, 1);
+  }
 }
 
 .copyright__link__image {

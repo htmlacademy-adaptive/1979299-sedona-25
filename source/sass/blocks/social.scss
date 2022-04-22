@@ -9,12 +9,21 @@
     top: -12px;
     background-color:  #81B3D2;
   }
+
+  &:hover::before,
+  &:active::before {
+    background-color: #669EC0;
+  }
   &::after {
     position: absolute;
     background-image: url("../img/footer-images/vkontakte.svg");
     content: "";
     width: 24px;
     height: 24px;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -29,12 +38,22 @@
     top: -12px;
     background-color:  #81B3D2;
   }
+
+  &:hover::before,
+  &:active::before {
+    background-color: #669EC0;
+  }
+
   &::after {
     position: absolute;
     background-image: url("../img/footer-images/telegram.svg");
     content: "";
     width: 24px;
     height: 24px;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -49,11 +68,21 @@
     top: -12px;
     background-color:  #81B3D2;
   }
+
+  &:hover::before,
+  &:active::before {
+    background-color: #669EC0;
+  }
+  
   &::after {
     position: absolute;
     background-image: url("../img/footer-images/youtube.svg");
     content: "";
     width: 24px;
     height: 24px;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }

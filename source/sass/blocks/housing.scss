@@ -1,3 +1,20 @@
+@import "./global/variables.scss";
+
+.housing {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/main-images/house.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -49px;
+    top: -2px;
+  }
+}
+
 .housing__title {
   font-family: "pt-sans", sans-serif;
   font-style: normal;
@@ -11,5 +28,34 @@
 .housing__description {
   text-transform: uppercase;
   color: #333333;
+  width: 225px;
 }
 
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .housing::before {
+    width: 75px;
+    height: 72px;
+    background-size: cover;
+    top: 60px;
+    left: 90px;
+  }
+
+  .housing__title {
+    font-size: 21px;
+  }
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .housing::before {
+    left: 162px;
+  }
+
+  .housing__description {
+    width: 282px;
+    margin: auto;
+  }
+}

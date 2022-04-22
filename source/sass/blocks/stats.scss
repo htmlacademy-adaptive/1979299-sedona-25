@@ -1,7 +1,7 @@
 @import "./global/variables.scss";
 
 .stats {
-  width: 320px;
+  width: 270px;
   height: 157px;
   text-align: center;
   background-color: #ffffff;
@@ -30,5 +30,9 @@
 @media (min-width: $tablet-width) {
   .stats {
     width: 520px;
+  }
+
+  .stats__slogan {
+    font-size: 21px;
   }
   }

@@ -1,15 +1,24 @@
 @import "./global/variables.scss";
 
 .main-nav {
-  display: none;
-  width: 320px;
   position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .main-nav__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  width: 320px;
+}
+
+
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+
 }
 
 // tablet-version
@@ -21,13 +30,10 @@
   }
 
   .main-nav__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
   }
 
-  .main-item {
-    width: 153px;
-  }
 }
 
 // desktop-version
@@ -36,5 +42,9 @@
   .main-nav {
     display: block;
     width: 1200px;
+  }
+
+  .main-nav__list {
+    grid-template-columns: repeat(5, 240px);
   }
 }

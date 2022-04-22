@@ -55,3 +55,12 @@
     margin: 0;
   }
 }
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    margin-left: 104px;
+    margin-right: 120px;
+  }
+}

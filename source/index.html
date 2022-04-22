@@ -12,28 +12,29 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/header-images/logotype-sedona.svg" width="185" height="96" alt="Город «Седона».">
       </a>
-      <button class="main-header__toggle button" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-      <nav class="main-nav main-nav--close">
+      <nav class="main-nav main-nav--closed main-nav--opened">
+        <button class="main-header__toggle button" type="button">
+          <svg aria-hidden="true" focusable="false" width="23" height="22">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
+        </svg><span class="visually-hidden">Открыть меню.</span>
+        </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item-index site-list__item--active">
-              <a class="site-list__link site-list-link" href="#">
+              <a class="site-list__link site-list-link" href="index.html">
                 Главная
               </a>
-              <button class="site-list__button button site-list__button--close" type="button">
-                <span class="visually-hidden">Закрыть.</span>
-              </button>
             </li>
-            <li class="site-list__item site-list__item-catalog site-list__item--active">
+            <li class="site-list__item site-list__item-catalog">
               <a class="site-list__link site-list-link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item-form site-list__item--active">
+            <li class="site-list__item site-list__item-form">
               <a class="site-list__link site-list-link" href="form.html">
                 Форма Отзыва
               </a>
             </li>
-            <li class="site-list__item site-list__item-academy site-list__item--active">
+            <li class="site-list__item site-list__item-academy">
               <a class="site-list__link site-list-link" href="#">
                 HTML ACADEMY
               </a>
@@ -44,7 +45,13 @@
     <main class="main-container">
       <section class="main-container__title title-site">
         <h1 class="visually-hidden">Добро пожаловать в великолепную "Седону"</h1>
-        <img class="title-site__image" src="img/header-images/main-title.svg" width="282" height="214" alt="Добро пожаловать в великолепную «Седону».">
+        <img class="title-site__image" src="img/header-images/main-title.svg" alt="Добро пожаловать в великолепную «Седону».">
+        <svg class="title-site__image-decoration" aria-hidden="true" focusable="false" width="320" height="57">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"/>
+        </svg>
+        <svg class="title-site__image-decoration-duble" aria-hidden="true" focusable="false" width="320" height="57">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"/>
+        </svg>
       </section>
       <section class="main-container__stats stats">
         <h2 class="visually-hidden">
@@ -62,9 +69,9 @@
           <ul class="advantages__list more-list">
             <li class="advantages__item advantages__item--selected city">
               <div class="advantages__item__header">
-                <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
-                <p class="advantages__description">— №1 —</p>
-                <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                <h3 class="advantages__title advantages__title-first">НАСТОЯЩИЙ ГОРОДОК</h3>
+                <p class="advantages__description advantages__description-first">— №1 —</p>
+                <p class="advantages__description advantages__description-first">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
               <img class="advantages__image-city city-image" src="img/main-images/city.jpg" width="320" height="260" alt="Городской пейзаж.">
             </li>
@@ -78,34 +85,32 @@
             </li>
             <li class="advantages__item more__item souvenirs more__item-souvenirs more__item--visible">
               <h3 class="more__item__title souvenirs__title">СУВЕНИРЫ</h3>
-              <p class="more__item__description souvenirs__description">Не только китайского, но и местного производства!</p>
+              <p class="more__item__description souvenirs__description">Не только китайского,<br> но и местного производства!</p>
             </li>
-
             <li class="advantages__item advantages__item--selected advantages-bridge__description">
-              <div class="advantages__item__header advantages-bridge">
-                <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
+              <div class="advantages__item__header advantages__item__header-second advantages-bridge">
+                <h3 class="advantages__title advantages__title-second">ТАМ ЕСТЬ Мост дьявола</h3>
                 <p class="advantages__description advantages-bridge__description">— №2 —</p>
                 <p class="advantages__description advantages-bridge__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <img class="advantages__image-bridge bridge__image" src="img/main-images/bridge.jpg" width="320" height="260" alt="Мост Дьявола.">
             </li>
-
             <li class="advantages__item advantages__item--selected">
-              <div class="advantahes__item__posts">
+              <div class="advantages__item__posts">
                 <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
                 <p class="advantages__description">— №3 —</p>
                 <p class="advantages__description">ВСЕ интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--selected">
-              <div class="advantahes__item__posts">
+              <div class="advantages__item__posts">
                 <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
                 <p class="advantages__description">— №4 —</p>
                 <p class="advantages__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
               </div>
             </li>
             <li class="advantages__item advantages__item--selected">
-              <div class="advantahes__item__posts">
+              <div class="advantages__item__posts">
                 <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
                 <p class="advantages__description">— №5 —</p>
                 <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
@@ -118,10 +123,12 @@
           <div class="order__list">
             <div class="order__item">
               <p class="order__item__interesting">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-              <p class="order__item__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+              <p class="order__item__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
-            <a class="order__item__link search-link" href="#">Найти Гостиницу</a>
-            <img class="order__item__map search-map search-map-marker" src="img/main-images/map.jpg" width="320" height="350" alt="карта поиска.">
+            <a class="order__item__link search-link search-link--disabled" href="#">Найти Гостиницу</a>
+            <div class="order__item__wrapper-map">
+              <img class="order__item__map search-map search-map-marker" src="img/main-images/map.jpg" width="320" height="350" alt="карта поиска.">
+            </div>
           </div>
       </section>
     </main>

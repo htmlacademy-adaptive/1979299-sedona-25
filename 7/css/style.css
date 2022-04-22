@@ -41,6 +41,7 @@
 
 .main-header__logo {
   text-align: center;
+  z-index: 1;
 }
 
 .main-header__toggle {
@@ -50,11 +51,17 @@
   background: transparent;
   fill: #81b3d2;
 }
-.main-header__toggle:hover {
+.main-header__toggle svg:hover {
   opacity: 0.6;
 }
-.main-header__toggle:active {
+.main-header__toggle svg:active {
   opacity: 0.3;
+}
+.main-header__toggle:hover::after, .main-header__toggle:hover::before {
+  background-color: rgba(250, 250, 250, 0.6);
+}
+.main-header__toggle:active::after, .main-header__toggle:active::before {
+  background-color: rgba(250, 250, 250, 0.3);
 }
 
 .main-header__toggle::before,
@@ -101,6 +108,8 @@
 }
 
 .main-container__title {
+  position: relative;
+  z-index: 0;
   background-color: #000000;
   color: #ffffff;
   background-image: url("../img/main-images/fone-mobile.jpg");
@@ -125,7 +134,7 @@
     height: 518px;
     background-image: url("../img/main-images/fone-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: 50% -30px;
+    background-position: 50% 0;
   }
 }
 .stats {
@@ -359,6 +368,11 @@
     padding: 43px 36px;
   }
 
+  .advantages__title-first {
+    width: 66%;
+    margin: 0 auto;
+  }
+
   .advantages__description-first {
     font-weight: 400;
   }
@@ -379,13 +393,9 @@
   }
 
   .advantages__item__posts .advantages__title {
-    width: 158px;
+    width: 150px;
     margin: 0 auto;
     margin-bottom: 21px;
-  }
-
-  .advantages__title-first {
-    width: 210px;
   }
 
   .advantages__item__header-second {
@@ -906,6 +916,13 @@
   text-align: center;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.site-list a:hover {
+  background-color: #669EC0;
+}
+.site-list a:active {
+  background-color: #669EC0;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .site-list::before {
@@ -1944,6 +1961,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
 }
 
 .main-nav__list {
@@ -1953,20 +1971,6 @@
   width: 320px;
 }
 
-@media (max-width: 767px) {
-  .main-nav--nojs .main-header__toggle {
-    display: none;
-  }
-  .main-nav--nojs .site-list {
-    position: static;
-  }
-  .main-nav--nojs .main-header__toggle:focus-within + .site-list {
-    display: none;
-  }
-  .main-nav--nojs .main-header__toggle:focus-within::before, .main-nav--nojs .main-header__toggle:focus-within::after {
-    display: none;
-  }
-}
 @media (min-width: 768px) {
   .main-nav {
     display: block;
@@ -2033,9 +2037,18 @@
 }
 
 .title-site__image-decoration {
-  display: block;
-  margin-top: 28px;
+  position: absolute;
   fill: #ffffff;
+  bottom: 0;
+  right: 0;
+}
+
+.title-site__image-decoration-duble {
+  position: absolute;
+  fill: #ffffff;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(-1);
 }
 
 @media (min-width: 768px) {
@@ -2046,10 +2059,29 @@
   .title-site__image-decoration {
     width: 768px;
   }
+
+  .title-site__image-decoration {
+    right: -227px;
+  }
+
+  .title-site__image-decoration-duble {
+    left: -227px;
+    width: 100%;
+    bottom: -1px;
+  }
 }
 @media (min-width: 1200px) {
   .title-site__image {
     width: 459px;
+  }
+
+  .title-site__image-decoration {
+    right: -8px;
+  }
+
+  .title-site__image-decoration-duble {
+    left: -440px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

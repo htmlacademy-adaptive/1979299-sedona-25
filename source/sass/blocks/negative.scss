@@ -17,3 +17,14 @@
   border-radius: 50px;
   bottom: -14px;
 }
+
+.negative__input[type="radio"]:checked + .negative__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}

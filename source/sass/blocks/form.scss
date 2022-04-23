@@ -33,6 +33,12 @@
   font-size: 12px;
 }
 
+// // mobile-only-version
+
+// @media (max-width: $mobile-width-only) {
+
+// }
+
 // tablet-version
 
 @media (min-width: $tablet-width) {
@@ -56,11 +62,11 @@
   }
 }
 
- // desktop-version
+// desktop-version
 
- @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .form__wrapper-button {
     width: 768px;
     margin: auto;
   }
- }
+}

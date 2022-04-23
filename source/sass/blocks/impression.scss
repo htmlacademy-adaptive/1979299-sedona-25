@@ -29,6 +29,11 @@
 
 .impression__item {
   margin-bottom: 26px;
+  padding-bottom: 10px;
+}
+
+.impression__item:last-child {
+  margin-bottom: 49px;
 }
 
 .impression__input {
@@ -37,6 +42,22 @@
 
 .impression__span {
   margin-left: 62px;
+}
+
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .impression {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 320px;
+      background-color: #e5e5e5;
+      top: -80px;
+    }
+  }
 }
 
 // tablet-version

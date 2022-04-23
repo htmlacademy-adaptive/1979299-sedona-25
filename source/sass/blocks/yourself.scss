@@ -46,7 +46,7 @@
 }
 
 .yourself-data__patronymic {
-  margin-bottom: 39px;
+  margin-bottom: 64px;
 }
 
 .yourself-data-name,
@@ -54,6 +54,7 @@
 .yourself-data__patronymic {
   border: none;
   background-color: #f2f2f2;
+
   &::placeholder {
     font-family: "pt-sans", sans-serif;
     font-style: normal;
@@ -65,6 +66,45 @@
   }
 }
 
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .yourself {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 320px;
+      background-color: #e5e5e5;
+      top: -74px;
+    }
+  }
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .yourself-name-style {
+    font-size: 21px;
+  }
+
+  .yourself__container {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 338px;
+      background-color: #dbdbdb;
+      right: -24px;
+      top: -50px;
+    }
+  }
+}
+
 // desktop-version
 
 @media (min-width: $desktop-width) {
@@ -72,5 +112,4 @@
     width: 430px;
     margin-left: 0;
   }
-
 }

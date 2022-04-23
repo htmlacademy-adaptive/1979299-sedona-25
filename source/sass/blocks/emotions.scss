@@ -45,6 +45,23 @@
   margin-bottom: 56px;
 }
 
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .emotions {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 320px;
+      background-color: #e5e5e5;
+      top: -74px;
+    }
+  }
+}
+
 // tablet-version
 
 @media (min-width: $tablet-width) {

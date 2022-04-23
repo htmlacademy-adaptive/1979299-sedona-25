@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .filling-title {
   font-family: "pt-sans", sans-serif;
   font-style: normal;
@@ -11,4 +13,12 @@
 .filling-overview {
   text-transform: uppercase;
   color: #333333;
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .filling-title {
+    font-size: 30px;
+  }
 }

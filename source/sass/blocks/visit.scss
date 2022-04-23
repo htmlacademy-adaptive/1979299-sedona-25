@@ -29,10 +29,32 @@
 
 .visit__item {
   margin-bottom: 26px;
+  padding-bottom: 10px;
+}
+
+.visit__item:last-child {
+  margin-bottom: 49px;
 }
 
 .visit__span {
   margin-left: 62px;
+}
+
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .visit {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 320px;
+      background-color: #e5e5e5;
+      top: -100px;
+    }
+  }
 }
 
 // tablet-version
@@ -45,7 +67,6 @@
     margin-bottom: 42px;
     column-gap: 32px;
     row-gap: 16px;
-
   }
 }
 

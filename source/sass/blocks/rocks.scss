@@ -16,3 +16,13 @@
   background-color: #f2f2f2;
   bottom: -14px;
 }
+
+.rocks__input[type="checkbox"]:checked + .rocks__control-mark::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/form-images/tick.svg");
+  left: 12px;
+  bottom: 15px;
+  width: 22px;
+  height: 16px;
+}

@@ -146,4 +146,24 @@
     width: 430px;
     margin-right: 0;
   }
+
+  .contacts-phone {
+    &::before {
+      right: -253px;
+    }
+
+    &::after {
+      right: -233px;
+    }
+  }
+
+  .contacts-email {
+    &::before {
+      right: -267px;
+    }
+
+    &::after {
+      right: -248px;
+    }
+  }
 }

@@ -49,6 +49,7 @@
 @media (max-width: $mobile-width-only) {
   .impression {
     position: relative;
+
     &::before {
       position: absolute;
       content: "";
@@ -68,9 +69,32 @@
     grid-template-columns: repeat(auto-fill, minmax(238px, 280px));
     gap: 16px;
     margin-left: 46px;
-    margin-bottom: 48px;
-}
+    margin-bottom: 12px;
+  }
 
+  .impressio-name-style {
+    font-size: 21px;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      top: 11px;
+      left: -170px;
+    }
+
+    &::after {
+      top: 11px;
+      right: -170px;
+    }
+  }
 }
 
 // desktop-version
@@ -78,6 +102,18 @@
 @media (min-width: $desktop-width) {
   .impression__list {
     margin-bottom: 73px;
+  }
+
+  .impressio-name-style {
+    &::before {
+      width: 280px;
+      left: -343px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -343px;
+    }
   }
 }
 

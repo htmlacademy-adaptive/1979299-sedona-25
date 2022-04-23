@@ -69,6 +69,30 @@
     width: 648px;
     margin: auto;
   }
+
+  .emotions-name-style {
+    font-size: 21px;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      top: 12px;
+      left: -184px;
+    }
+
+    &::after {
+      top: 12px;
+      right: -184px;
+    }
+  }
 }
 
 // desktop-version
@@ -76,5 +100,17 @@
 @media (min-width: $desktop-width) {
   .emotions {
     width: 768px;
+  }
+
+  .emotions-name-style {
+    &::before {
+      width: 280px;
+      left: -354px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -354px;
+    }
   }
 }

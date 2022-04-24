@@ -120,12 +120,13 @@
 
   &:active {
     background: #ffffff;
-    border: 4px solid #e5e5e5;
-    outline: none;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
 
   &:focus-visible {
-    outline: none;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
   }
 }
 

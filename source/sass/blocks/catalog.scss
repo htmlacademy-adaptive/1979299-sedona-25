@@ -59,11 +59,11 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .catalog__video__overview {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-align: center;
   margin-bottom: 38px;
@@ -93,7 +93,7 @@
   .catalog__thoto__container {
     width: 458px;
     margin: auto;
-    margin-bottom: 63px;
+    margin-bottom: 62px;
   }
 
   .catalog__thoto {
@@ -130,6 +130,24 @@
     width: 648px;
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 40px;
+  }
+
+  .catalog__video__overview {
+    width: 445px;
+    margin-bottom: 70px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .catalog__thoto__container__title {
+    margin-top: 66px;
+  }
+
+  .catalog__thoto__container__overview {
+    width: 445px;
   }
 }
 
@@ -139,6 +157,10 @@
   .catalog__thoto {
     width: 1200px;
     margin: 0;
+  }
+
+  .catalog__thoto__container__title {
+    margin-top: 100px;
   }
 
   .catalog__video {

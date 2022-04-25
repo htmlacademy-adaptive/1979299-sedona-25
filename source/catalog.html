@@ -12,28 +12,29 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/header-images/logotype-sedona.svg" width="185" height="96" alt="Город «Седона».">
       </a>
-      <button class="main-header__toggle button" type="button"><span class="visually-hidden">Открыть меню.</span></button>
-      <nav class="main-nav main-nav--close">
+      <nav class="main-nav main-nav--closed main-nav--opened">
+        <button class="main-header__toggle button" type="button">
+          <svg aria-hidden="true" focusable="false" width="23" height="22">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
+        </svg><span class="visually-hidden">Открыть меню.</span>
+        </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item-index site-list__item--active">
               <a class="site-list__link site-list-link" href="index.html">
                 Главная
               </a>
-              <button class="site-list__button button site-list__button--close" type="button">
-                <span class="visually-hidden">Закрыть.</span>
-              </button>
             </li>
-            <li class="site-list__item site-list__item-catalog site-list__item--active">
+            <li class="site-list__item site-list__item-catalog">
               <a class="site-list__link site-list-link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item-form site-list__item--active">
+            <li class="site-list__item site-list__item-form">
               <a class="site-list__link site-list-link" href="form.html">
                 Форма Отзыва
               </a>
             </li>
-            <li class="site-list__item site-list__item-academy site-list__item--active">
+            <li class="site-list__item site-list__item-academy">
               <a class="site-list__link site-list-link" href="#">
                 HTML ACADEMY
               </a>
@@ -45,6 +46,7 @@
       <section class="catalog__title">
         <h1 class="visually-hidden">Каталог достопримечательностей города "Седона"</h1>
         <img class="catalog__image" src="img/catalog-images/sedona-title.svg" width="229" height="39" alt="Достопремичательности грода «Седона».">
+        <img class="catalog__image-decoration" src="img/main-images/decorative-triangle.svg" width="320" height="57" alt="декоративный элемент зеркальный треугольник.">
       </section>
       <section class="catalog__thoto__container">
           <h2 class="catalog__thoto__container__title thoto__title">Фото и видео</h2>

@@ -27,6 +27,7 @@
 
 .souvenirs__description {
   text-transform: uppercase;
+
   br {
     display: none;
   }
@@ -61,8 +62,9 @@
 
   .souvenirs__description {
     width: 220px;
-     br {
+
+    br {
       display: inline;
-     }
+    }
   }
 }

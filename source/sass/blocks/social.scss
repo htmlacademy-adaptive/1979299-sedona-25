@@ -1,5 +1,6 @@
 .social__link--vkontakte {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -7,19 +8,21 @@
     height: 48px;
     left: -12px;
     top: -12px;
-    background-color:  #81B3D2;
+    background-color: #81b3d2;
   }
 
   &:hover::before,
   &:active::before {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
+
   &::after {
     position: absolute;
     background-image: url("../img/footer-images/vkontakte.svg");
     content: "";
     width: 24px;
     height: 24px;
+    top: 0;
   }
 
   &:active::after {
@@ -29,6 +32,7 @@
 
 .social__link--telegram {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -36,12 +40,12 @@
     height: 48px;
     left: -12px;
     top: -12px;
-    background-color:  #81B3D2;
+    background-color: #81b3d2;
   }
 
   &:hover::before,
   &:active::before {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
 
   &::after {
@@ -50,6 +54,7 @@
     content: "";
     width: 24px;
     height: 24px;
+    top: 0;
   }
 
   &:active::after {
@@ -59,6 +64,7 @@
 
 .social__link--youtube {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -66,20 +72,21 @@
     height: 48px;
     left: -12px;
     top: -12px;
-    background-color:  #81B3D2;
+    background-color: #81b3d2;
   }
 
   &:hover::before,
   &:active::before {
-    background-color: #669EC0;
+    background-color: #669ec0;
   }
-  
+
   &::after {
     position: absolute;
     background-image: url("../img/footer-images/youtube.svg");
     content: "";
     width: 24px;
     height: 24px;
+    top: 0;
   }
 
   &:active::after {

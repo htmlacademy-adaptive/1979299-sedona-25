@@ -7,19 +7,26 @@
 }
 
 .main-form__title {
+  position: relative;
   background-color: #000000;
   color: #ffffff;
   background-image: url("../img/main-images/fone-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-position: 50% -220px;
   min-width: 320px;
   min-height: 158px;
   text-align: center;
 }
 
+.main-form__image-decoration {
+  width: 550px;
+  position: absolute;
+  left: -115px;
+  top: 102px;
+}
+
 .main-form-filling__container {
   width: 320px;
-  height: 198px;
   text-align: center;
 }
 
@@ -35,7 +42,7 @@
 
 .main-form-filling__overview {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 53px;
 }
 
 // tablet-version
@@ -52,8 +59,39 @@
     width: 458px;
   }
 
-}
+  .main-form__title {
+    background-color: #000000;
+    color: #ffffff;
+    background-image: url("../img/main-images/fone-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -220px;
+    min-width: 768px;
+    min-height: 290px;
+    text-align: center;
+  }
 
+  .main-form__image {
+    margin-top: 95px;
+    width: 457px;
+    height: 77px;
+  }
+
+  .main-form__image-decoration {
+    width: 1200px;
+    position: absolute;
+    left: -215px;
+    top: 234px;
+  }
+
+  .main-form-filling__title {
+    margin-top: 64px;
+    margin-bottom: 20px;
+  }
+
+  .main-form-filling__overview {
+    margin-bottom: 102px;
+  }
+}
 // desktop-version
 
 @media (min-width: $desktop-width) {
@@ -61,5 +99,28 @@
     width: 960px;
     margin-left: 120px;
     margin-right: 120px;
+  }
+
+  .main-form__title {
+    background-color: #000000;
+    color: #ffffff;
+    background-image: url("../img/main-images/fone-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% -220px;
+    min-width: 1200px;
+    min-height: 300px;
+    text-align: center;
+  }
+
+  .main-form__image {
+    margin-top: 101px;
+    width: 460px;
+    height: 80px;
+  }
+
+  .main-form__image-decoration {
+    width: 1202px;
+    left: -1px;
+    top: 244px;
   }
 }

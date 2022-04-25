@@ -9,6 +9,17 @@
   color: #000000;
 }
 
+.opinion__input[type="radio"]:checked + .opinion__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}
+
 .opinion__control-mark {
   position: absolute;
   width: 46px;
@@ -16,4 +27,16 @@
   background-color: #f2f2f2;
   border-radius: 50px;
   bottom: -14px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.opinion__input[type="radio"]:checked:active + .opinion__control-mark::before {
+  background-color: rgba(51, 51, 51, 0.3);
 }

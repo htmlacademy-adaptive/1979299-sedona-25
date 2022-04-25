@@ -9,16 +9,15 @@
 .title-site__image-decoration {
   position: absolute;
   fill: #ffffff;
-  bottom: 0;
-  right: 0;
+  bottom: -1px;
+  right: -1px;
 }
 
 .title-site__image-decoration-duble {
   position: absolute;
   fill: #ffffff;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: scaleX(-1);
+  bottom: -1px;
+  left: -1px;
   transform: scaleX(-1);
 }
 
@@ -31,9 +30,6 @@
 
   .title-site__image-decoration {
     width: 768px;
-  }
-
-  .title-site__image-decoration {
     right: -227px;
     margin-bottom: -1px;
   }
@@ -59,5 +55,5 @@
   .title-site__image-decoration-duble {
     left: -440px;
     width: 100%;
-}
+  }
 }

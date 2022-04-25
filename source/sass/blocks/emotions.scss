@@ -34,6 +34,21 @@
   padding: 16px;
   box-sizing: border-box;
   resize: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
+
+  &:focus-visible {
+    outline: 4px solid #e5e5e5;
+    outline-offset: -4px;
+  }
 }
 
 .emotions-description__input::placeholder {
@@ -45,12 +60,53 @@
   margin-bottom: 56px;
 }
 
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .emotions {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 320px;
+      background-color: #e5e5e5;
+      top: -74px;
+    }
+  }
+}
+
 // tablet-version
 
 @media (min-width: $tablet-width) {
   .emotions {
     width: 648px;
     margin: auto;
+  }
+
+  .emotions-name-style {
+    font-size: 21px;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+
+    &::before {
+      top: 12px;
+      left: -184px;
+    }
+
+    &::after {
+      top: 12px;
+      right: -184px;
+    }
   }
 }
 
@@ -59,5 +115,17 @@
 @media (min-width: $desktop-width) {
   .emotions {
     width: 768px;
+  }
+
+  .emotions-name-style {
+    &::before {
+      width: 280px;
+      left: -354px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -354px;
+    }
   }
 }

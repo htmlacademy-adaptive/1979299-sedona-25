@@ -14,12 +14,11 @@
   width: 320px;
 }
 
-
 // mobile-only-version
 
-@media (max-width: $mobile-width-only) {
+// @media (max-width: $mobile-width-only) {
 
-}
+// }
 
 // tablet-version
 
@@ -33,7 +32,6 @@
     display: grid;
     grid-template-columns: repeat(5, 153px);
   }
-
 }
 
 // desktop-version

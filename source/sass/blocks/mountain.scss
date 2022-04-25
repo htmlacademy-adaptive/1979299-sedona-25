@@ -9,18 +9,34 @@
   color: #000000;
 }
 
+.mountain__input[type="checkbox"]:checked + .mountain__control-mark::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/form-images/tick.svg");
+  left: 12px;
+  bottom: 15px;
+  width: 22px;
+  height: 16px;
+}
+
 .mountain__control-mark {
   position: absolute;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
   bottom: -14px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
-.mountain__input[type="checkbox"]:checked + .mountain__control-mark::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/form-images/tick.svg");
+.mountain__input[type="checkbox"]:checked:active + .mountain__control-mark::before {
+  background-image: url("../img/form-images/tick-active.svg");
   left: 12px;
   bottom: 15px;
   width: 22px;

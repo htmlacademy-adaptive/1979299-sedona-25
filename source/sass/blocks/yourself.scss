@@ -71,6 +71,12 @@
 .yourself-data-patronymic {
   border: none;
   background-color: #f2f2f2;
+  font-family: "pt-sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
 
   &::placeholder {
     font-family: "pt-sans", sans-serif;

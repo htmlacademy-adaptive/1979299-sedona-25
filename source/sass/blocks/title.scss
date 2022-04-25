@@ -9,14 +9,14 @@
 .title-site__image-decoration {
   position: absolute;
   fill: #ffffff;
-  bottom: 0;
+  bottom: -1px;
   right: -1px;
 }
 
 .title-site__image-decoration-duble {
   position: absolute;
   fill: #ffffff;
-  bottom: 0;
+  bottom: -1px;
   left: -1px;
   transform: scaleX(-1);
 }

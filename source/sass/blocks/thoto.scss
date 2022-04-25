@@ -61,6 +61,12 @@
     margin: 0;
   }
 
+  .thoto__item:nth-child(even) + .thoto__item {
+    .thoto__link__wrapper {
+      background-color: #eaeaea;
+    }
+  }
+
   .thoto__link__wrapper {
     display: flex;
     justify-content: space-between;
@@ -92,6 +98,12 @@
     top: 208px;
   }
 
+  .thoto__item:nth-child(even) + .thoto__item {
+    .thoto__link__wrapper {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
   .thoto__item:first-child {
     grid-column: 1 / 4;
 
@@ -108,6 +120,4 @@
   .thoto__item {
     position: relative;
   }
-
-
 }

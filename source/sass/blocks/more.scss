@@ -7,22 +7,25 @@
 .more__item:nth-child(2) {
   margin-left: 65px;
   margin-bottom: 22px;
-    .more__item__title {
-      margin-bottom: 16px;
-    }
+
+  .more__item__title {
+    margin-bottom: 16px;
+  }
 }
 
 .more__item:nth-child(3) {
   margin-left: 70px;
   margin-bottom: 22px;
+
   .more__item__title {
-  margin-bottom: 16px;
-}
+    margin-bottom: 16px;
+  }
 }
 
 .more__item:nth-child(4) {
   margin-left: 62px;
   margin-bottom: 52px;
+
   .more__item__title {
     margin-bottom: 16px;
   }
@@ -36,12 +39,11 @@
   .more__item:nth-child(4) {
     margin: 0;
     padding: 153px 36px 59px;
+
     .more__item__title {
       margin-bottom: 21px;
     }
   }
-
-
 }
 
 // desktop-version

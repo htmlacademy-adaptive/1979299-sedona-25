@@ -29,6 +29,7 @@
 
 .order__item__wrapper-map {
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -46,11 +47,10 @@
     width: 16px;
     height: 16px;
     border-radius: 50px;
-    background-color: #81B3D3;
+    background-color: #81b3d3;
     top: 166px;
     left: 155px;
   }
-
 }
 
 .order__item {
@@ -58,6 +58,7 @@
   padding-top: 39px;
   padding-left: 29px;
   padding-right: 29px;
+
   .order__item__interesting {
     font-family: "pt-sans", sans-serif;
     font-style: normal;
@@ -90,6 +91,7 @@
   .order__item {
     width: 458px;
     padding: 0;
+
     .order__item__interesting {
       font-size: 30px;
     }
@@ -97,6 +99,7 @@
 
   .order__list {
     padding-top: 61px;
+
     .order__item__link {
       width: 458px;
     }
@@ -106,3 +109,4 @@
     width: 100%;
   }
 }
+

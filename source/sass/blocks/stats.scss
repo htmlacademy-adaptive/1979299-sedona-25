@@ -1,8 +1,7 @@
 @import "./global/variables.scss";
 
 .stats {
-  width: 270px;
-  height: 157px;
+  width: 264px;
   text-align: center;
   background-color: #ffffff;
   color: #000000;
@@ -25,6 +24,12 @@
 .stats__intro {
   text-transform: uppercase;
 }
+
+// mobile-only-version
+
+// @media (max-width: $mobile-width-only) {
+
+// }
 
 // / table-version
 

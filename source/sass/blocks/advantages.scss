@@ -28,6 +28,7 @@
 
 .advantages__item:nth-child(1) .advantages__description {
   width: 282px;
+  margin-left: 17px;
 }
 
 .advantages__item:nth-child(6),
@@ -47,10 +48,10 @@
 
 .advantages__item__header {
   width: 320px;
-  height: 167.5px;
   background-color: #81b3d2;
   color: #000000;
-  padding-top: 43.5px;
+  padding-top: 49.5px;
+  padding-bottom: 39px;
 
   p {
     margin-top: 11px;
@@ -125,8 +126,36 @@
 
 // mobile-only-version
 
-// @media (max-width: $mobile-width-only) {
-// }
+@media (max-width: $mobile-width-only) {
+  .advantages__item:first-child .advantages__item__header {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 17px;
+      background-color: #ffffff;
+      top: 0;
+      left: 0;
+      clip-path: polygon(100% 0, 50% 100%, 0 0);
+    }
+  }
+
+  .advantages__item {
+    text-align: center;
+
+    h3 {
+      margin-left: -7px;
+    }
+  }
+
+  .advantages__item:nth-child(5) {
+    .advantages__item__header {
+      padding: 0;
+    }
+  }
+}
 
 // tablet-version
 

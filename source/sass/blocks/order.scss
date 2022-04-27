@@ -37,8 +37,8 @@
     height: 27px;
     border-radius: 50px;
     background-color: #ffffff;
-    top: 160px;
-    left: 150px;
+    top: 162px;
+    left: 146px;
   }
 
   &::after {
@@ -48,8 +48,8 @@
     height: 16px;
     border-radius: 50px;
     background-color: #81b3d3;
-    top: 166px;
-    left: 155px;
+    top: 167px;
+    left: 152px;
   }
 }
 
@@ -67,7 +67,7 @@
     line-height: 26px;
     color: #000000;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .order__item__description {
@@ -75,6 +75,10 @@
     color: #333333;
     margin-bottom: 32px;
   }
+}
+
+.order__item__map {
+  display: block;
 }
 
 // mobile-only-version

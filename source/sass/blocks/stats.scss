@@ -27,9 +27,11 @@
 
 // mobile-only-version
 
-// @media (max-width: $mobile-width-only) {
-
-// }
+@media (max-width: $mobile-width-only) {
+  .stats p {
+    width: 261px;
+  }
+}
 
 // / table-version
 

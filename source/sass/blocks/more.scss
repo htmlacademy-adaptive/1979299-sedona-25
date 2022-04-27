@@ -52,6 +52,11 @@
       margin-bottom: 21px;
     }
   }
+
+  .more__item:nth-child(2) .more__item__description {
+    width: 156px;
+    margin: auto;
+  }
 }
 
 // desktop-version

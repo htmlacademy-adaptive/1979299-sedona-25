@@ -16,6 +16,11 @@
   min-width: 320px;
   min-height: 158px;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-images/fone-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .main-form__image-decoration {
@@ -68,6 +73,11 @@
     min-width: 768px;
     min-height: 290px;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-images/fone-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .main-form__image {
@@ -110,6 +120,11 @@
     min-width: 1200px;
     min-height: 300px;
     text-align: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-images/fone-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .main-form__image {

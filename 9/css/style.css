@@ -118,6 +118,12 @@
   min-width: 320px;
   min-height: 389px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .main-container__title {
+    background-image: url("../img/main-images/fone-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
 
 .main-container__stats {
   margin: 0 auto;
@@ -135,6 +141,25 @@
     background-image: url("../img/main-images/fone-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-container__title {
+    background-image: url("../img/main-images/fone-tablet@2x.jpg");
+    background-size: 768px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container__title {
+    background-image: url("../img/main-images/fone-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-container__title {
+    background-image: url("../img/main-images/fone-desktop@2x.jpg");
+    background-size: 1200px auto;
   }
 }
 .stats {
@@ -161,6 +186,11 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .stats p {
+    width: 261px;
+  }
+}
 @media (min-width: 768px) {
   .stats {
     width: 520px;
@@ -212,7 +242,7 @@
   height: 1px;
   background-color: #d6d6d6;
   left: 18px;
-  bottom: 0;
+  bottom: 13px;
 }
 
 .advantages__item__header {
@@ -265,12 +295,13 @@
   background-color: #eeeeee;
   height: 150px;
   padding: 33px;
-  padding-bottom: 1px;
-  padding-top: 17px;
+  padding-bottom: 6px;
+  padding-top: 26px;
 }
 .advantages__item__posts .advantages__title {
   color: #000000;
   margin-bottom: 11px;
+  margin-left: 0;
 }
 .advantages__item__posts p {
   margin-bottom: 17px;
@@ -299,7 +330,7 @@
     width: 100%;
     height: 17px;
     background-color: #ffffff;
-    top: 0;
+    top: -1px;
     left: 0;
     -webkit-clip-path: polygon(100% 0, 50% 100%, 0 0);
             clip-path: polygon(100% 0, 50% 100%, 0 0);
@@ -313,7 +344,29 @@
   }
 
   .advantages__item:nth-child(5) .advantages__item__header {
-    padding: 0;
+    padding: 38px 10px 35px 17px;
+    box-sizing: border-box;
+  }
+  .advantages__item:nth-child(5) .advantages__item__header p {
+    padding-right: 8px;
+  }
+
+  .advantages__item:nth-child(7)::before {
+    bottom: 12px;
+  }
+  .advantages__item:nth-child(7) .advantages__item__posts {
+    padding-top: 10px;
+  }
+
+  .advantages__item:nth-child(8) .advantages__item__posts {
+    margin-top: -32px;
+    padding-top: 32px;
+  }
+  .advantages__item:nth-child(8) .advantages__item__posts .advantages__description:last-child {
+    margin-bottom: 18px;
+  }
+  .advantages__item:nth-child(8) .advantages__item__posts .advantages__title {
+    margin-top: 12px;
   }
 }
 @media (min-width: 768px) {
@@ -505,6 +558,11 @@
 .more__item:nth-child(3) .more__item__title,
 .more__item:nth-child(4) .more__item__title {
     margin-bottom: 21px;
+  }
+
+  .more__item:nth-child(2) .more__item__description {
+    width: 156px;
+    margin: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -754,8 +812,8 @@
   height: 27px;
   border-radius: 50px;
   background-color: #ffffff;
-  top: 160px;
-  left: 150px;
+  top: 162px;
+  left: 146px;
 }
 .order__item__wrapper-map::after {
   position: absolute;
@@ -764,8 +822,8 @@
   height: 16px;
   border-radius: 50px;
   background-color: #81b3d3;
-  top: 166px;
-  left: 155px;
+  top: 167px;
+  left: 152px;
 }
 
 .order__item {
@@ -782,12 +840,16 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .order__item .order__item__description {
   text-transform: uppercase;
   color: #333333;
   margin-bottom: 32px;
+}
+
+.order__item__map {
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -822,8 +884,8 @@
 }
 
 .main-footer__link {
-  margin-top: 52.5px;
-  margin-bottom: 33.5px;
+  margin-top: 38.5px;
+  margin-bottom: 45.5px;
   display: block;
   font-family: "pt-sans", sans-serif;
   font-style: normal;
@@ -839,19 +901,19 @@
   display: grid;
   padding: 0;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 83px;
   max-width: 156px;
   list-style-type: none;
   grid-template-columns: repeat(3, 48px);
   gap: 6px;
-  margin-left: 70px;
+  margin-left: 72px;
 }
 
 .main-footer__copyright {
   margin: 0 auto;
   margin-bottom: 29px;
   width: 156px;
-  margin-left: 64px;
+  margin-left: 63px;
 }
 
 @media (min-width: 768px) {
@@ -980,8 +1042,8 @@
 
 .copyright__link__image {
   position: absolute;
-  right: -40px;
-  top: -6px;
+  right: -39px;
+  top: -8px;
 }
 
 .site-list {
@@ -1071,6 +1133,12 @@
   background-color: #ffffff;
   color: #000000;
   text-align: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .catalog__title {
+    background-image: url("../img/main-images/fone-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .catalog__image {
@@ -1168,20 +1236,29 @@
     min-height: 290px;
     text-align: center;
   }
-
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .catalog__title {
+    background-image: url("../img/main-images/fone-tablet@2x.jpg");
+    background-size: 768px auto;
+  }
+}
+@media (min-width: 768px) {
   .catalog__image {
     margin-top: 95px;
     width: 457px;
     height: 77px;
   }
-
+}
+@media (min-width: 768px) {
   .catalog__video {
     width: 648px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 40px;
   }
-
+}
+@media (min-width: 768px) {
   .catalog__video__overview {
     width: 445px;
     margin-bottom: 70px;
@@ -1189,11 +1266,13 @@
   .catalog__video__overview br {
     display: none;
   }
-
+}
+@media (min-width: 768px) {
   .catalog__thoto__container__title {
     margin-top: 66px;
   }
-
+}
+@media (min-width: 768px) {
   .catalog__thoto__container__overview {
     width: 445px;
   }
@@ -1224,13 +1303,21 @@
     min-height: 300px;
     text-align: center;
   }
-
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .catalog__title {
+    background-image: url("../img/main-images/fone-desktop@2x.jpg");
+    background-size: 1200px auto;
+  }
+}
+@media (min-width: 1200px) {
   .catalog__image {
     margin-top: 101px;
     width: 460px;
     height: 80px;
   }
-
+}
+@media (min-width: 1200px) {
   .catalog__image-decoration {
     width: 1207px;
     left: -3px;
@@ -1462,6 +1549,12 @@
   min-height: 158px;
   text-align: center;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .main-form__title {
+    background-image: url("../img/main-images/fone-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
 
 .main-form__image-decoration {
   width: 550px;
@@ -1512,25 +1605,35 @@
     min-height: 290px;
     text-align: center;
   }
-
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .main-form__title {
+    background-image: url("../img/main-images/fone-tablet@2x.jpg");
+    background-size: 768px auto;
+  }
+}
+@media (min-width: 768px) {
   .main-form__image {
     margin-top: 95px;
     width: 457px;
     height: 77px;
   }
-
+}
+@media (min-width: 768px) {
   .main-form__image-decoration {
     width: 1200px;
     position: absolute;
     left: -215px;
     top: 234px;
   }
-
+}
+@media (min-width: 768px) {
   .main-form-filling__title {
     margin-top: 64px;
     margin-bottom: 20px;
   }
-
+}
+@media (min-width: 768px) {
   .main-form-filling__overview {
     margin-bottom: 102px;
   }
@@ -1552,13 +1655,21 @@
     min-height: 300px;
     text-align: center;
   }
-
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-form__title {
+    background-image: url("../img/main-images/fone-desktop@2x.jpg");
+    background-size: 1200px auto;
+  }
+}
+@media (min-width: 1200px) {
   .main-form__image {
     margin-top: 101px;
     width: 460px;
     height: 80px;
   }
-
+}
+@media (min-width: 1200px) {
   .main-form__image-decoration {
     width: 1202px;
     left: -1px;

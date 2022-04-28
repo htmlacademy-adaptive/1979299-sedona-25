@@ -29,6 +29,7 @@
 
 .order__item__wrapper-map {
   position: relative;
+  height: 350px;
 
   &::before {
     position: absolute;
@@ -37,8 +38,11 @@
     height: 27px;
     border-radius: 50px;
     background-color: #ffffff;
-    top: 162px;
-    left: 146px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   &::after {
@@ -48,8 +52,11 @@
     height: 16px;
     border-radius: 50px;
     background-color: #81b3d3;
-    top: 167px;
-    left: 152px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 

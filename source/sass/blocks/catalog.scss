@@ -74,6 +74,24 @@
   margin-bottom: 38px;
 }
 
+.catalog__video__wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 54px;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+  }
+}
+
 // mobile-only-version
 
 @media (max-width: $mobile-width-only) {

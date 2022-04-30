@@ -38,7 +38,7 @@
               </a>
             </li>
             <li class="site-list__item site-list__item-academy">
-              <a class="site-list__link site-list-link" href="#">
+              <a class="site-list__link site-list-link" href="https://htmlacademy.ru/intensive/adaptive">
                 HTML ACADEMY
               </a>
             </li>
@@ -164,22 +164,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-header__toggle");
-      var closed = document.querySelector(".main-header__toggle::before")
-
-      navToggle.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      navMain.classList.add("main-nav--opened");
-    });
-
-      closed.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      navMain.classList.add("main-nav--closed");
-    });
-
-    navMain.classList.remove("main-nav--nojs");
-    </script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

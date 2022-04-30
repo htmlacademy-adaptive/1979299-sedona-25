@@ -28,21 +28,6 @@
   }
 }
 
-// mobile-only-version
-
-// @media (max-width: $mobile-width-only) {
-//   .main-header__toggle:focus-within + .site-list {
-//     display: block;
-//   }
-
-//   .main-header__toggle:focus-within {
-//     &::before,
-//     &::after {
-//       display: block;
-//     }
-//   }
-// }
-
 // tablet-version
 
 @media (min-width: $tablet-width) {

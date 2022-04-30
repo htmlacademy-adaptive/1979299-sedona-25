@@ -2789,7 +2789,7 @@
 }
 
 @media (max-width: 767px) {
-  .main-nav--nojs {
+  .main-nav--nojs .site-list {
     position: static;
   }
   .main-nav--nojs .main-header__toggle {

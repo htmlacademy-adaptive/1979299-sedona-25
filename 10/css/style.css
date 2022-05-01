@@ -797,7 +797,7 @@
 
 .order__item {
   margin: 0 auto;
-  padding-top: 39px;
+  padding-top: 38px;
   padding-left: 29px;
   padding-right: 29px;
 }
@@ -853,8 +853,9 @@
 }
 
 .main-footer__link {
-  margin-top: 38.5px;
+  margin-top: 52.5px;
   margin-bottom: 45.5px;
+  margin-right: 2px;
   display: block;
   font-family: "pt-sans", sans-serif;
   font-style: normal;
@@ -912,7 +913,7 @@
   content: "";
   width: 48px;
   height: 48px;
-  left: -12px;
+  left: -14px;
   top: -12px;
   background-color: #81b3d2;
 }
@@ -926,6 +927,7 @@
   width: 24px;
   height: 24px;
   top: 0;
+  left: -2px;
 }
 .social__link--vkontakte:active::after {
   opacity: 0.3;
@@ -939,7 +941,7 @@
   content: "";
   width: 48px;
   height: 48px;
-  left: -12px;
+  left: -14px;
   top: -12px;
   background-color: #81b3d2;
 }
@@ -953,6 +955,7 @@
   width: 24px;
   height: 24px;
   top: 0;
+  left: -2px;
 }
 .social__link--telegram:active::after {
   opacity: 0.3;
@@ -966,7 +969,7 @@
   content: "";
   width: 48px;
   height: 48px;
-  left: -12px;
+  left: -14px;
   top: -12px;
   background-color: #81b3d2;
 }
@@ -980,6 +983,7 @@
   width: 24px;
   height: 24px;
   top: 0;
+  left: -2px;
 }
 .social__link--youtube:active::after {
   opacity: 0.3;
@@ -1030,10 +1034,14 @@
   text-decoration: none;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 17px 0 12px 0;
+  padding: 16px 0 12px 0;
   text-align: center;
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-list__item:last-child a {
+  border-bottom: none;
 }
 
 .site-list::before {
@@ -1533,7 +1541,7 @@
   color: #ffffff;
   background-image: url("../img/main-images/fone-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -220px;
+  background-position: 50% -231px;
   min-width: 320px;
   min-height: 158px;
   text-align: center;
@@ -1546,9 +1554,9 @@
 }
 
 .main-form__image-decoration {
-  width: 550px;
+  width: 1200px;
   position: absolute;
-  left: -115px;
+  left: -441px;
   top: 102px;
 }
 
@@ -1563,7 +1571,7 @@
 
 .main-form-filling__title {
   margin: 0;
-  margin-top: 38px;
+  margin-top: 36px;
   margin-bottom: 24px;
 }
 
@@ -1673,7 +1681,7 @@
 .form__button {
   width: 281px;
   height: 58px;
-  margin-left: 20px;
+  margin-left: 19px;
 }
 
 .form-button {
@@ -1684,12 +1692,15 @@
   text-transform: uppercase;
   color: #ffffff;
   background: #81b3d2;
+  padding-top: 3px;
+  padding-right: 2px;
 }
 
 .form__necessarily {
   text-align: end;
   margin: 0;
   margin-right: 20px;
+  margin-top: 2px;
 }
 
 .form-necessarily-style {
@@ -1828,7 +1839,7 @@
     height: 1px;
     width: 320px;
     background-color: #e5e5e5;
-    top: -74px;
+    top: -71px;
   }
 }
 @media (min-width: 768px) {
@@ -2002,7 +2013,7 @@
     height: 1px;
     width: 320px;
     background-color: #e5e5e5;
-    top: -74px;
+    top: -71px;
   }
 }
 @media (min-width: 768px) {
@@ -2084,7 +2095,7 @@
     height: 1px;
     width: 320px;
     background-color: #e5e5e5;
-    top: -80px;
+    top: -81px;
   }
 }
 @media (min-width: 768px) {
@@ -2303,7 +2314,7 @@
     height: 1px;
     width: 320px;
     background-color: #e5e5e5;
-    top: -100px;
+    top: -107px;
   }
 }
 @media (min-width: 768px) {
@@ -2531,7 +2542,7 @@
 
 .emotions__label {
   display: block;
-  margin-bottom: 56px;
+  margin-bottom: 51px;
 }
 
 @media (max-width: 767px) {
@@ -2544,7 +2555,7 @@
     height: 1px;
     width: 320px;
     background-color: #e5e5e5;
-    top: -74px;
+    top: -71px;
   }
 }
 @media (min-width: 768px) {

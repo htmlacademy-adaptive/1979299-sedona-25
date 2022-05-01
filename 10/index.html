@@ -16,7 +16,7 @@
       <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="img/header-images/logotype-sedona.svg" width="185" height="96" alt="Город «Седона».">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-header__toggle button" type="button">
           <svg aria-hidden="true" focusable="false" width="23" height="22">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
@@ -39,7 +39,7 @@
               </a>
             </li>
             <li class="site-list__item site-list__item-academy">
-              <a class="site-list__link site-list-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <a class="site-list__link site-list-link" href="https://htmlacademy.ru">
                 HTML ACADEMY
               </a>
             </li>
@@ -50,11 +50,11 @@
       <section class="main-container__title title-site">
         <h1 class="visually-hidden">Добро пожаловать в великолепную "Седону"</h1>
         <img class="title-site__image" src="img/header-images/main-title.svg" alt="Добро пожаловать в великолепную «Седону».">
-        <svg class="title-site__image-decoration" aria-hidden="true" focusable="false" width="320" height="57">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"/>
+        <svg class="title-site__image-decoration" aria-hidden="true" focusable="false" width="320" height="57" aria-label="Декоративный треугольник">
+          <use href="./img/sprite.svg#image-decoration"></use>
         </svg>
-        <svg class="title-site__image-decoration-duble" aria-hidden="true" focusable="false" width="320" height="57">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z"/>
+        <svg class="title-site__image-decoration-duble" aria-hidden="true" focusable="false" width="320" height="57" aria-label="Декоративный треугольник">
+          <use href="./img/sprite.svg#image-decoration"></use>
         </svg>
       </section>
       <section class="main-container__stats stats">
@@ -78,6 +78,9 @@
                 <p class="advantages__description advantages__description-first">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-images/city-desktop.webp 1x, img/main-images/city-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/main-images/city-tablet.webp 1x, img/main-images/city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-images/city-mobile.webp 1x, img/main-images/city-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/main-images/city-desktop.jpg 1x, img/main-images/city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/main-images/city-tablet.jpg 1x, img/main-images/city-tablet@2x.jpg 2x">
                 <img class="advantages__image-city" src="img/main-images/city-mobile.jpg" srcset="img/main-images/city-mobile@2x.jpg 2x" alt="Городской пейзаж.">
@@ -159,8 +162,8 @@
             </li>
           </ul>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано<svg class="copyright__link__image" aria-hidden="true" focusable="false" width="27" height="33">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Разработано в HTML Academy">Разработано<svg class="copyright__link__image" aria-hidden="true" focusable="false" width="27" height="33">
+            <use href="./img/sprite.svg#academy"></use>
           </svg><span class="visually-hidden">ссылка на сайт HTML Academy.</span></a>
         </div>
       </div>

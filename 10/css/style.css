@@ -2801,13 +2801,10 @@
 
 @media (max-width: 767px) {
   .main-nav--nojs .site-list {
+    display: block;
     position: static;
   }
   .main-nav--nojs .main-header__toggle {
-    display: none;
-  }
-
-  .main-nav--closed .site-list {
     display: none;
   }
 

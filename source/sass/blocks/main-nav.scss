@@ -16,9 +16,58 @@
 
 // mobile-only-version
 
-// @media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
+  .main-nav--nojs {
+    .site-list {
+      display: block;
+      position: static;
+    }
 
-// }
+    .main-header__toggle {
+      display: none;
+    }
+  }
+
+  .main-nav--opened {
+    .site-list {
+      display: block;
+    }
+
+    .main-header__toggle::before,
+    .main-header__toggle::after {
+      content: "";
+      position: absolute;
+      right: -4px;
+      top: 9px;
+      width: 27px;
+      height: 4px;
+      background-color: #ffffff;
+      z-index: 4;
+    }
+
+    .main-header__toggle::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    .main-header__toggle::after {
+      transform: rotate(-45deg);
+      box-shadow: none;
+    }
+  }
+
+  .main-header__toggle {
+    &:hover::after,
+    &:hover::before {
+      background-color: rgba(250, 250, 250, 0.6);
+    }
+
+    &:active::after,
+    &:active::before {
+      background-color: rgba(250, 250, 250, 0.3);
+    }
+  }
+}
 
 // tablet-version
 

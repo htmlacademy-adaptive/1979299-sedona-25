@@ -263,8 +263,16 @@
   .advantages__item__header {
     width: 256px;
     height: 256px;
-    padding: 43px 36px;
+    padding: 40px 30px;
     box-sizing: border-box;
+
+    p {
+      margin-top: 13px;
+    }
+  }
+
+  .advantages__item__header p:last-child {
+    margin-top: 23px;
   }
 
   .advantages__image-city,

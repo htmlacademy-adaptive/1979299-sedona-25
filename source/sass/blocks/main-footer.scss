@@ -7,8 +7,9 @@
 }
 
 .main-footer__link {
-  margin-top: 38.5px;
+  margin-top: 52.5px;
   margin-bottom: 45.5px;
+  margin-right: 2px;
   display: block;
   font-family: "pt-sans", sans-serif;
   font-style: normal;
@@ -59,7 +60,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    margin-left: 104px;
-    margin-right: 120px;
+    width: 976px;
+    margin: auto;
   }
 }

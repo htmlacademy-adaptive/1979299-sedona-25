@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .copyright__link {
   position: relative;
   font-family: "pt-sans", sans-serif;
@@ -30,4 +32,16 @@
   position: absolute;
   right: -39px;
   top: -8px;
+}
+
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    padding-top: 1px;
+
+    .copyright__link__image {
+      top: -4px;
+    }
+  }
 }

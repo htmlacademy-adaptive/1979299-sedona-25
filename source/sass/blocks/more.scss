@@ -46,15 +46,15 @@
   .more__item:nth-child(3),
   .more__item:nth-child(4) {
     margin: 0;
-    padding: 153px 36px 59px;
+    padding: 158px 31px 59px;
 
     .more__item__title {
-      margin-bottom: 21px;
+      margin-bottom: 23px;
     }
   }
 
   .more__item:nth-child(2) .more__item__description {
-    width: 156px;
+    width: 170px;
     margin: auto;
   }
 }
@@ -66,5 +66,15 @@
   .more__item:nth-child(3),
   .more__item:nth-child(4) {
     padding-bottom: 80px;
+  }
+
+  .more__item:nth-child(2) .more__item__description {
+    width: 265px;
+  }
+
+  .more__item:nth-child(2) .more__item__title,
+  .more__item:nth-child(3) .more__item__title,
+  .more__item:nth-child(4) .more__item__title {
+    margin-bottom: 24px;
   }
 }

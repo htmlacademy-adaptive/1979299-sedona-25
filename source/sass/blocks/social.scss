@@ -1,3 +1,5 @@
+@import "./global/variables.scss";
+
 .social__link--vkontakte {
   position: relative;
 
@@ -6,7 +8,7 @@
     content: "";
     width: 48px;
     height: 48px;
-    left: -14px;
+    left: -12px;
     top: -12px;
     background-color: #81b3d2;
   }
@@ -23,7 +25,7 @@
     width: 24px;
     height: 24px;
     top: 0;
-    left: -2px;
+    left: 0;
   }
 
   &:active::after {
@@ -39,7 +41,7 @@
     content: "";
     width: 48px;
     height: 48px;
-    left: -14px;
+    left: -12px;
     top: -12px;
     background-color: #81b3d2;
   }
@@ -56,7 +58,7 @@
     width: 24px;
     height: 24px;
     top: 0;
-    left: -2px;
+    left: 0;
   }
 
   &:active::after {
@@ -72,7 +74,7 @@
     content: "";
     width: 48px;
     height: 48px;
-    left: -14px;
+    left: -12px;
     top: -12px;
     background-color: #81b3d2;
   }
@@ -89,10 +91,27 @@
     width: 24px;
     height: 24px;
     top: 0;
-    left: -2px;
+    left: 0;
   }
 
   &:active::after {
     opacity: 0.3;
+  }
+}
+
+// tablet-version
+
+@media (min-width: $tablet-width) {
+  .social__link--vkontakte,
+  .social__link--telegram,
+  .social__link--youtube {
+    &::before {
+      left: -9px;
+      top: -13px;
+    }
+
+    &::after {
+      left: 3px;
+    }
   }
 }

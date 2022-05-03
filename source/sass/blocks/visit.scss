@@ -63,11 +63,14 @@
   .visit__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 224px));
-    margin-left: 120px;
+    margin-left: 84px;
     column-gap: 32px;
-    row-gap: 16px;
+    row-gap: 1px;
   }
 
+  .visit__name {
+    margin-bottom: 38px;
+  }
   .visit-name-style {
     font-size: 21px;
     width: 308px;
@@ -83,13 +86,13 @@
     }
 
     &::before {
-      top: 22px;
-      left: -154px;
+      top: 25px;
+      left: -169px;
     }
 
     &::after {
-      top: 22px;
-      right: -154px;
+      top: 25px;
+      right: -169px;
     }
   }
 

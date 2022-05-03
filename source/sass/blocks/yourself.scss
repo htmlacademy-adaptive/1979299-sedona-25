@@ -114,6 +114,8 @@
 
   .yourself__container {
     position: relative;
+    margin-left: 0;
+    margin-right: 43px;
 
     &::before {
       position: absolute;
@@ -121,9 +123,13 @@
       width: 1px;
       height: 338px;
       background-color: #dbdbdb;
-      right: -24px;
-      top: -50px;
+      right: -44px;
+      top: -54px;
     }
+  }
+
+  .yourself__name {
+    margin-bottom: 28px;
   }
 }
 

@@ -7,7 +7,6 @@
 }
 
 .main-footer__link {
-  margin-top: 52.5px;
   margin-bottom: 45.5px;
   margin-right: 2px;
   display: block;
@@ -45,10 +44,6 @@
 @media (max-width: $mobile-width-only) {
   .main-footer__list {
     margin-bottom: 81px;
-  }
-
-  .main-footer__link {
-    margin-top: 40.5px;
   }
 }
 

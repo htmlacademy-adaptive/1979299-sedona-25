@@ -67,9 +67,9 @@
   .impression__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(238px, 280px));
-    gap: 16px;
-    margin-left: 46px;
-    margin-bottom: 12px;
+    gap: 1px 16px;
+    margin-left: 36px;
+    margin-bottom: -1px;
   }
 
   .impressio-name-style {
@@ -87,13 +87,17 @@
 
     &::before {
       top: 11px;
-      left: -170px;
+      left: -189px;
     }
 
     &::after {
       top: 11px;
-      right: -170px;
+      right: -189px;
     }
+  }
+
+  .impression__name {
+    margin-bottom: 37px;
   }
 }
 

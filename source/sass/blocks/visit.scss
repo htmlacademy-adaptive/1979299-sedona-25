@@ -71,6 +71,7 @@
   .visit__name {
     margin-bottom: 38px;
   }
+
   .visit-name-style {
     font-size: 21px;
     width: 308px;
@@ -107,7 +108,18 @@
   .visit__list {
     grid-template-columns: repeat(auto-fill, minmax(153px, 184px));
     margin-left: 45px;
-    margin-bottom: 67px;
+    margin-bottom: 45px;
+    column-gap: 51px;
+  }
+
+  .visit__item:last-child {
+    .visit__span {
+      margin-left: 44px;
+    }
+
+    .rocks__control-mark {
+      left: -20px;
+    }
   }
 
   .visit-name-style {
@@ -120,6 +132,10 @@
       width: 280px;
       right: -330px;
     }
+  }
+
+  .visit__name {
+    margin-bottom: 69px;
   }
 }
 

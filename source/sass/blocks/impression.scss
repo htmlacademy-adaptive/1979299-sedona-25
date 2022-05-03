@@ -105,19 +105,26 @@
 
 @media (min-width: $desktop-width) {
   .impression__list {
-    margin-bottom: 73px;
+    margin: 0;
+    margin-left: 53px;
+    margin-bottom: 25px;
+    column-gap: 28px;
   }
 
   .impressio-name-style {
     &::before {
       width: 280px;
-      left: -343px;
+      left: -344px;
     }
 
     &::after {
       width: 280px;
-      right: -343px;
+      right: -344px;
     }
+  }
+
+  .impression__name {
+    margin-bottom: 55px;
   }
 }
 

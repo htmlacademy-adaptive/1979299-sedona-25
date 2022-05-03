@@ -111,6 +111,15 @@
     background-size: 768px auto;
   }
 }
+@media (min-width: 768px) {
+  .main-container__stats {
+    margin-top: 47px;
+    margin-bottom: 57px;
+  }
+  .main-container__stats .main-container__stats-intro {
+    margin-top: 29px;
+  }
+}
 @media (min-width: 1200px) {
   .main-container__title {
     background-image: url("../img/main-images/fone-desktop.jpg");
@@ -402,8 +411,15 @@
   .advantages__item__header {
     width: 256px;
     height: 256px;
-    padding: 43px 36px;
+    padding: 40px 30px;
     box-sizing: border-box;
+  }
+  .advantages__item__header p {
+    margin-top: 13px;
+  }
+
+  .advantages__item__header p:last-child {
+    margin-top: 23px;
   }
 
   .advantages__image-city,
@@ -795,6 +811,11 @@
   margin: auto;
 }
 
+.order__item__wrapper-map__map {
+  width: 100%;
+  height: 100%;
+}
+
 .order__item {
   margin: 0 auto;
   padding-top: 38px;
@@ -901,8 +922,8 @@
 }
 @media (min-width: 1200px) {
   .main-footer__wrapper {
-    margin-left: 104px;
-    margin-right: 120px;
+    width: 976px;
+    margin: auto;
   }
 }
 .social__link--vkontakte {
@@ -1074,6 +1095,7 @@
     color: #000000;
     background-color: inherit;
     border: none;
+    padding: 18px 0 12px 4px;
   }
   .site-list a:hover {
     color: #81b3d2;
@@ -2815,7 +2837,7 @@
 .main-nav--opened .main-header__toggle::after {
     content: "";
     position: absolute;
-    right: -2px;
+    right: -4px;
     top: 9px;
     width: 27px;
     height: 4px;
@@ -2909,35 +2931,23 @@
 }
 
 .title-site__image-decoration {
+  width: 1200px;
   position: absolute;
-  fill: #ffffff;
-  bottom: -1px;
-  right: -1px;
-}
-
-.title-site__image-decoration-duble {
-  position: absolute;
-  fill: #ffffff;
-  bottom: -1px;
-  left: -1px;
-  transform: scaleX(-1);
+  left: -441px;
+  top: 332px;
 }
 
 @media (min-width: 768px) {
   .title-site__image {
     width: 461px;
+    padding-top: 77px;
   }
 
   .title-site__image-decoration {
-    width: 768px;
-    right: -227px;
-    margin-bottom: -1px;
-  }
-
-  .title-site__image-decoration-duble {
-    left: -227px;
-    width: 100%;
-    bottom: -1px;
+    width: 1200px;
+    position: absolute;
+    left: -215px;
+    top: 462px;
   }
 }
 @media (min-width: 1200px) {
@@ -2946,12 +2956,9 @@
   }
 
   .title-site__image-decoration {
-    right: -8px;
-  }
-
-  .title-site__image-decoration-duble {
-    left: -440px;
-    width: 100%;
+    width: 1202px;
+    left: -1px;
+    top: 461px;
   }
 }
 /*# sourceMappingURL=style.css.map */

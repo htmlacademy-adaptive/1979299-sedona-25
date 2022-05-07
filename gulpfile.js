@@ -3,6 +3,7 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -13,7 +14,7 @@ export const styles = () => { //name
     .pipe(plumber()) // обработка ошибок
     .pipe(sass().on('error', sass.logError)) // style.scss -> style.css
     .pipe(postcss([ // style;css
-      autoprefixer() // style.css -> style.css[prefix]
+      autoprefixer(), // style.css -> style.css[prefix]
       csso() // style.css[prefix] -> style.css[prefix, min]
     ]))
     .pipe(rename('style.min.css'))

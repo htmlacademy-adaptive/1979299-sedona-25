@@ -2,25 +2,28 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
 // Styles
 
-export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
+export const styles = () => { //name
+  return gulp.src('source/sass/style.scss', { sourcemaps: true }) //style.scss
+    .pipe(plumber()) // обработка ошибок
+    .pipe(sass().on('error', sass.logError)) // style.scss -> style.css
+    .pipe(postcss([ // style;css
+      autoprefixer() // style.css -> style.css[prefix]
+      csso() // style.css[prefix] -> style.css[prefix, min]
     ]))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 // Server
 
-const server = (done) => {
+function server(done) {
   browser.init({
     server: {
       baseDir: 'source'

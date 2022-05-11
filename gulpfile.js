@@ -38,10 +38,10 @@ const html = () => {
 
 // Scripts
 
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/*.js')
+  .pipe(terser())
   .pipe(gulp.dest('build/js'))
-  .pipe(browser.stream());
   }
 
 // Images
@@ -49,12 +49,12 @@ const scripts = () => {
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
   .pipe(squoosh())
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
   }
 
   const copyImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
   }
 
   // WebP
@@ -64,7 +64,7 @@ const optimizeImages = () => {
   .pipe(squoosh({
   webp: {}
   }))
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
   }
 
 // SVG

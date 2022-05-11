@@ -99,6 +99,10 @@
   .order__item__description br {
     display: none;
   }
+
+  .order__item__wrapper-map {
+    margin-bottom: 40px;
+  }
 }
 
 // tablet-version
@@ -110,6 +114,11 @@
 
     .order__item__interesting {
       font-size: 30px;
+      margin-bottom: 31px;
+    }
+
+    .order__item__description {
+      margin-bottom: 43px;
     }
   }
 
@@ -118,6 +127,8 @@
 
     .order__item__link {
       width: 458px;
+      padding-top: 15px;
+      margin-bottom: 60px;
     }
   }
 
@@ -126,3 +137,14 @@
   }
 }
 
+// desktop-version
+
+@media (min-width: $desktop-width) {
+  .order__item .order__item__description {
+    margin-bottom: 47px;
+  }
+
+  .order__list .order__item__link {
+    margin-bottom: 67px;
+  }
+}

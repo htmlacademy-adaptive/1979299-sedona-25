@@ -8,6 +8,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  overflow-x: hidden;
 }
 
 // tablet-version
@@ -15,7 +16,6 @@
 @media (min-width: $tablet-width) {
   .page__body {
     width: 768px;
-    overflow-x: hidden;
   }
 }
 

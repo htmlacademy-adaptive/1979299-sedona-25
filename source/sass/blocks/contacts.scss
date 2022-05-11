@@ -160,33 +160,46 @@
   .contacts-name-style {
     font-size: 21px;
   }
+
+  .contacts__name {
+    margin-bottom: 28px;
+    margin-left: -9px;
+  }
+
+  .contacts__container {
+    margin-right: 0;
+  }
 }
 
 // desktop-version
 
 @media (min-width: $desktop-width) {
   .contacts__container {
-    width: 430px;
+    width: 402px;
     margin-right: 0;
   }
 
   .contacts-phone {
     &::before {
-      right: -253px;
+      right: -224px;
     }
 
     &::after {
-      right: -233px;
+      right: -206px;
     }
   }
 
   .contacts-email {
     &::before {
-      right: -267px;
+      right: -238px;
     }
 
     &::after {
-      right: -248px;
+      right: -221px;
     }
+  }
+
+  .contacts__name {
+    margin-left: -22px;
   }
 }

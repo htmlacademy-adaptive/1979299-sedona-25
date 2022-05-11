@@ -7,7 +7,6 @@
 }
 
 .main-footer__link {
-  margin-top: 52.5px;
   margin-bottom: 45.5px;
   margin-right: 2px;
   display: block;
@@ -40,13 +39,21 @@
   margin-left: 63px;
 }
 
+// mobile-only-version
+
+@media (max-width: $mobile-width-only) {
+  .main-footer__list {
+    margin-bottom: 81px;
+  }
+}
+
 // tablet-version
 
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 47px 66px 47px 56px;
+    padding: 48px 66px 47px 60px;
   }
 
   .main-footer__link,
@@ -60,7 +67,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    width: 976px;
+    width: 955px;
     margin: auto;
   }
 }

@@ -85,6 +85,10 @@
     margin: auto;
   }
 
+  .emotions__name {
+    margin-bottom: 26px;
+  }
+
   .emotions-name-style {
     font-size: 21px;
     position: relative;
@@ -100,13 +104,22 @@
 
     &::before {
       top: 12px;
-      left: -184px;
+      left: -199px;
     }
 
     &::after {
       top: 12px;
-      right: -184px;
+      right: -199px;
     }
+  }
+
+  .emotions-description__input {
+    padding: 17px;
+    height: 162px;
+  }
+
+  .emotions__label {
+    margin-bottom: 42px;
   }
 }
 

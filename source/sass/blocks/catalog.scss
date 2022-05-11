@@ -10,7 +10,7 @@
   position: relative;
   background-image: url("../img/main-images/fone-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -220px;
+  background-position: 50% -231px;
   min-width: 320px;
   min-height: 158px;
   background-color: #ffffff;
@@ -28,15 +28,15 @@
 }
 
 .catalog__image-decoration {
-  width: 550px;
+  width: 1200px;
   position: absolute;
-  left: -115px;
+  left: -441px;
   top: 102px;
 }
 
 .catalog__thoto__container {
   width: 320px;
-  margin-bottom: 50px;
+  margin-bottom: 67px;
 }
 
 .catalog__thoto__container__title {
@@ -50,7 +50,7 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  margin-top: 21px;
+  margin-top: 24px;
   width: 290px;
 }
 
@@ -64,7 +64,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-bottom: 21px;
+  margin-bottom: 27px;
 }
 
 .catalog__video__overview {
@@ -76,12 +76,13 @@
 
 .catalog__video__wrapper {
   position: relative;
+  margin-bottom: 29px;
 
   &::before {
     position: absolute;
     content: "";
     width: 48px;
-    height: 54px;
+    height: 55px;
     background-color: rgba(255, 255, 255, 0.7);
     top: 0;
     bottom: 0;
@@ -105,8 +106,13 @@
       height: 1px;
       background-color: #e5e5e5;
       left: -20px;
-      top: -24px;
+      top: -25px;
     }
+  }
+
+  .catalog__video__wrapper::before {
+    top: 3px;
+    left: 15px;
   }
 }
 
@@ -116,7 +122,7 @@
   .catalog__thoto__container {
     width: 458px;
     margin: auto;
-    margin-bottom: 62px;
+    margin-bottom: 87px;
   }
 
   .catalog__thoto {
@@ -137,7 +143,7 @@
     color: #ffffff;
     background-image: url("../img/main-images/fone-tablet.jpg");
     background-repeat: no-repeat;
-    background-position: 50% -220px;
+    background-position: 50% -228px;
     min-width: 768px;
     min-height: 290px;
     text-align: center;
@@ -163,7 +169,7 @@
 
   .catalog__video__overview {
     width: 445px;
-    margin-bottom: 70px;
+    margin-bottom: 89px;
 
     br {
       display: none;
@@ -171,11 +177,16 @@
   }
 
   .catalog__thoto__container__title {
-    margin-top: 66px;
+    margin-top: 60px;
   }
 
   .catalog__thoto__container__overview {
     width: 445px;
+    margin-top: 32px;
+  }
+
+  .catalog__video__title {
+    margin-bottom: 32px;
   }
 }
 
@@ -195,6 +206,7 @@
     width: 800px;
     margin-left: 200px;
     text-align: center;
+    margin-bottom: 85px;
   }
 
   .catalog__title {
@@ -202,7 +214,7 @@
     color: #ffffff;
     background-image: url("../img/main-images/fone-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: 50% -220px;
+    background-position: 50% -217px;
     min-width: 1200px;
     min-height: 300px;
     text-align: center;
@@ -223,5 +235,9 @@
     width: 1207px;
     left: -3px;
     top: 244px;
+  }
+
+  .catalog__video__overview {
+    margin-bottom: 86px;
   }
 }

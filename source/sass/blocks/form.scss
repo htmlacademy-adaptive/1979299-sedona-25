@@ -28,6 +28,7 @@
   margin: 0;
   margin-right: 20px;
   margin-top: 2px;
+  margin-bottom: 55px;
 }
 
 .form-necessarily-style {
@@ -36,11 +37,6 @@
   font-size: 12px;
 }
 
-// // mobile-only-version
-
-// @media (max-width: $mobile-width-only) {
-
-// }
 
 // tablet-version
 
@@ -59,10 +55,17 @@
 
   .form__button {
     margin: 0;
+    width: 324px;
+    padding-top: 5px;
+    padding-right: 11px;
   }
 
   .form__necessarily {
     margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    padding-top: 8px;
   }
 }
 
@@ -73,5 +76,13 @@
     width: 768px;
     margin: auto;
     margin-bottom: 64px;
+  }
+
+  .form__wrapper {
+    margin-bottom: 7px;
+  }
+
+  .form__button {
+    width: 384px;
   }
 }

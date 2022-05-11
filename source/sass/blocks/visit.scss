@@ -63,9 +63,13 @@
   .visit__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 224px));
-    margin-left: 120px;
+    margin-left: 84px;
     column-gap: 32px;
-    row-gap: 16px;
+    row-gap: 1px;
+  }
+
+  .visit__name {
+    margin-bottom: 38px;
   }
 
   .visit-name-style {
@@ -83,13 +87,13 @@
     }
 
     &::before {
-      top: 22px;
-      left: -154px;
+      top: 25px;
+      left: -169px;
     }
 
     &::after {
-      top: 22px;
-      right: -154px;
+      top: 25px;
+      right: -169px;
     }
   }
 
@@ -104,7 +108,18 @@
   .visit__list {
     grid-template-columns: repeat(auto-fill, minmax(153px, 184px));
     margin-left: 45px;
-    margin-bottom: 67px;
+    margin-bottom: 45px;
+    column-gap: 51px;
+  }
+
+  .visit__item:last-child {
+    .visit__span {
+      margin-left: 44px;
+    }
+
+    .rocks__control-mark {
+      left: -20px;
+    }
   }
 
   .visit-name-style {
@@ -117,6 +132,10 @@
       width: 280px;
       right: -330px;
     }
+  }
+
+  .visit__name {
+    margin-bottom: 69px;
   }
 }
 

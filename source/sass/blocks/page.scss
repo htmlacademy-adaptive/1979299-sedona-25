@@ -21,6 +21,11 @@
 
 // desktop-version
 @media (min-width: $desktop-width) {
+  .page {
+    width: 1280px;
+    margin: auto;
+  }
+
   .page__body {
     width: 1200px;
   }

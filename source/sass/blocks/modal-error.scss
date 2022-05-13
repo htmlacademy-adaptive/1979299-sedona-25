@@ -28,13 +28,13 @@
 .modal-error__container__content {
   width: 237px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .modal-error__container__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .modal-error-container-title {
@@ -65,11 +65,12 @@
   font-family: "pt-sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
   background: #81b3d2;
+  padding-top: 4px;
 }
 
 // tablet-version
@@ -78,11 +79,35 @@
   .modal-error__container {
     margin-top: 283px;
     width: 400px;
+    padding-top: 48px;
+    min-height: 347px;
+    box-sizing: border-box;
+  }
+
+  .modal-error__container__content {
+    width: 307px;
+    margin-bottom: 46px;
+  }
+
+  .modal-error__container__title {
+    width: 240px;
+    margin: auto;
+    margin-bottom: 23px;
+  }
+
+  .modal-error-container-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .modal-error__container__button {
     width: 272px;
-    margin-left: 60px;
+    margin-left: 64px;
+  }
+
+  .modal-error-container-button {
+    font-size: 21px;
   }
 }
 

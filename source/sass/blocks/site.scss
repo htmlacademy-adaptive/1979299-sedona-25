@@ -7,7 +7,7 @@
 .site-list a {
   position: relative;
   display: block;
-  font-family: "pt-sans", sans-serif;
+  font-family: "pt-sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -55,7 +55,7 @@
 
 @media (min-width: $tablet-width) {
   .site-list a {
-    font-family: "pt-sans", sans-serif;
+    font-family: "pt-sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;

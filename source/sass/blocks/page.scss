@@ -4,7 +4,7 @@
   width: 320px;
   padding: 0;
   margin: 0 auto;
-  font-family: "pt-sans", sans-serif;
+  font-family: "pt-sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -21,6 +21,11 @@
 
 // desktop-version
 @media (min-width: $desktop-width) {
+  .page {
+    width: 1280px;
+    margin: auto;
+  }
+
   .page__body {
     width: 1200px;
   }

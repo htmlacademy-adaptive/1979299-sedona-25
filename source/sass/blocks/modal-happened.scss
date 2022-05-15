@@ -16,8 +16,8 @@
 
 .modal-happened__container {
   margin: auto;
-  padding: 36px 0 0 0;
-  margin-top: 402px;
+  padding: 40px 0 0 0;
+  margin-top: 152px;
 }
 
 .modal-happened__container--auth {
@@ -28,13 +28,13 @@
 .modal-happened__container__content {
   width: 237px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 52px;
 }
 
 .modal-happened__container__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .modal-happened-container-title {
@@ -69,14 +69,15 @@
 }
 
 .modal-happened-container-button {
-  font-family: "pt-sans", sans-serif;
+  font-family: "pt-sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
   background: #81b3d2;
+  padding-top: 4px;
 }
 
 // tablet-version
@@ -85,16 +86,42 @@
   .modal-happened__container {
     margin-top: 162px;
     width: 640px;
+    padding-top: 52px;
   }
 
-
   .modal-happened__container__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 640px;
+    height: 146px;
   }
 
   .modal-happened__container__button {
-    width: 468px;
-    margin-left: 84px;
+    width: 456px;
+    margin: 0;
+  }
+
+  .modal-happened-container-button {
+    font-size: 21px;
+    padding-top: 8px;
+  }
+
+  .modal-happened__container__content {
+    width: 410px;
+  }
+
+  .modal-happened__container__title {
+    margin-bottom: 28px;
+  }
+
+  .modal-happened-container-title {
+    font-size: 30px;
+  }
+
+  .modal-happened__container__description {
+    width: 412px;
   }
 }
 
@@ -102,6 +129,6 @@
 
 @media (min-width: $desktop-width) {
   .modal-happened__container {
-    margin-top: 145px
+    margin-top: 145px;
   }
 }

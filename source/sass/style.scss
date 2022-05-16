@@ -1,6 +1,6 @@
 // Начните писать стили здесь
 @use "./blocks/page.scss";
-@use "./blocks/font-face.scss";
+@use "./global/font-face.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/main-container.scss";
 @use "./blocks/stats.scss";
@@ -19,7 +19,7 @@
 @use "./blocks/photo.scss";
 @use "./blocks/card.scss";
 @use "./blocks/button.scss";
-@use "./blocks/visually-hidden.scss";
+@use "./global/visually-hidden.scss";
 @use "./blocks/video.scss";
 @use "./blocks/main-form.scss";
 @use "./blocks/form.scss";

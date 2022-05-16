@@ -1,6 +1,6 @@
 @import "./global/variables.scss";
 
-.catalog__thoto {
+.catalog__photo {
   width: 280px;
   margin-left: 20px;
   margin-right: 20px;
@@ -34,19 +34,19 @@
   top: 102px;
 }
 
-.catalog__thoto__container {
+.catalog__photo__container {
   width: 320px;
   margin-bottom: 67px;
 }
 
-.catalog__thoto__container__title {
+.catalog__photo__container__title {
   margin: 0;
   padding: 0;
   text-align: center;
   margin-top: 33px;
 }
 
-.catalog__thoto__container__overview {
+.catalog__photo__container__overview {
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -96,20 +96,6 @@
 // mobile-only-version
 
 @media (max-width: $mobile-width-only) {
-  .thoto__item {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 320px;
-      height: 1px;
-      background-color: #e5e5e5;
-      left: -20px;
-      top: -25px;
-    }
-  }
-
   .catalog__video__wrapper::before {
     top: 3px;
     left: 15px;
@@ -119,13 +105,13 @@
 // tablet-version
 
 @media (min-width: $tablet-width) {
-  .catalog__thoto__container {
+  .catalog__photo__container {
     width: 458px;
     margin: auto;
     margin-bottom: 87px;
   }
 
-  .catalog__thoto {
+  .catalog__photo {
     width: 648px;
     margin-left: 60px;
     margin-right: 60px;
@@ -176,11 +162,11 @@
     }
   }
 
-  .catalog__thoto__container__title {
+  .catalog__photo__container__title {
     margin-top: 60px;
   }
 
-  .catalog__thoto__container__overview {
+  .catalog__photo__container__overview {
     width: 445px;
     margin-top: 32px;
   }
@@ -193,12 +179,12 @@
 // desktop-version
 
 @media (min-width: $desktop-width) {
-  .catalog__thoto {
+  .catalog__photo {
     width: 1200px;
     margin: 0;
   }
 
-  .catalog__thoto__container__title {
+  .catalog__photo__container__title {
     margin-top: 100px;
   }
 

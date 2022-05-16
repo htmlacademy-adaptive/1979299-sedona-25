@@ -1,5 +1,9 @@
 @import "./global/variables.scss";
 
+.page {
+  overflow-x: hidden;
+}
+
 .page__body {
   width: 320px;
   padding: 0;

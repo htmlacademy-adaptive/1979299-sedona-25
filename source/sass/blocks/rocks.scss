@@ -38,3 +38,7 @@
 .rocks__input[type="checkbox"]:checked:active + .rocks__control-mark::before {
   background-image: url("../img/form-images/tick-active.svg");
 }
+
+.rocks__input[type="checkbox"]:focus + .rocks__control-mark {
+  background-color: #e5e5e5;
+}

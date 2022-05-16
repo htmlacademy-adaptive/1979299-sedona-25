@@ -38,3 +38,7 @@
 .bridge-visit__input[type="checkbox"]:checked:active + .bridge-visit__control-mark::before {
   background-image: url("../img/form-images/tick-active.svg");
 }
+
+.bridge-visit__input[type="checkbox"]:focus + .bridge-visit__control-mark {
+  background-color: #e5e5e5;
+}

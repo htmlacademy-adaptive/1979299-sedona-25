@@ -38,3 +38,7 @@
 .park__input[type="checkbox"]:checked:active + .park__control-mark::before {
   background-image: url("../img/form-images/tick-active.svg");
 }
+
+.park__input[type="checkbox"]:focus + .park__control-mark {
+  background-color: #e5e5e5;
+}

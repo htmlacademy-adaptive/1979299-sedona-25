@@ -67,7 +67,7 @@
   .photo__list {
     display: grid;
     grid-template-columns: 324px 324px;
-    grid-auto-rows: 480px 347px 347px;
+    grid-auto-rows: 480px 346px 346px;
     margin-bottom: 56px;
   }
 
@@ -155,13 +155,6 @@
 
   .photo__item {
     position: relative;
-
-    &:nth-child(3),
-    &:nth-child(4) {
-      .photo__link__title {
-        margin-top: 13px;
-      }
-    }
 
     .photo__link__wrapper {
       padding-top: 6px;
